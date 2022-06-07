@@ -1,0 +1,26 @@
+.bg-light{
+    width: 100%;
+    height: 100px;
+}
+.navbar-brand{
+    position: relative;
+    top:90px;
+   right: 400px;
+}
+
+.logo1{
+    width: 30%;
+}
+.navbar-collapse{
+    position: relative;
+    right: 200px;
+}
+.navbar-nav>li{
+    margin-right: 15%;
+}
+#pages{
+    color: rgb(0, 0, 0);
+}
+#pages:hover{
+    color: rgb(146, 71, 17);
+}
