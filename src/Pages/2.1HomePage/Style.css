@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+}
+.container{
+   
+}
+.container>.logo4{
+    position: relative;
+    right: 20%;
+    width: 140%;
+    height: 400px;
+  
+
+}
+.container>.officialLogo{
+    position: relative;
+    bottom: 620px;
+    right: 10%;
+    width: 150%;
+}
+.container1{
+    position: relative;
+    bottom: 1500px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.container1>div>img{
+    width: 50%;
+}

@@ -21,6 +21,7 @@
 #pages{
     color: rgb(5, 0, 0);
 }
-#pages:hover{
+.ul>li:hover{
+    cursor: pointer;
     color: rgb(146, 71, 17);
 }
