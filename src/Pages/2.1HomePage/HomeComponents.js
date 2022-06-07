@@ -16,9 +16,9 @@ export function Explanation() {
   return (
     <div className="container1">
       <div>
-        <h1>Get your students coding in no time!</h1>
+        <h1 className>Get your students<br/> coding in no time!</h1>
         <p>
-          we are non-profit organization, <br /> we create this platform to
+          we are non-profit organization,  we create this platform to
           improve education among the refugees and help kids study where they
           are by introducing them into tech world.
         </p>
