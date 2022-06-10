@@ -5,7 +5,7 @@ import ExplainLogo from "../../Images/eplainOwl.gif";
 
 export function Header() {
   return (
-    <div class="container">
+    <div className="container">
       <img src={Logo2} className="logo4" alt="loading..." />
       <img src={Logo1} className="officialLogo" alt="loading..." />
     </div>
