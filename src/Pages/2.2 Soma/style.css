@@ -18,12 +18,17 @@ border-radius: 25px;
 }
 .image1>img:hover,.image2>img:hover{
     box-shadow: 5px 10px 8px 10px #888888;
+    list-style:none;
+    text-decoration:none;
     
 }
+
+
 
 .container2{
     display: flex;
     flex-direction: row;
+    margin-left:15%
     
 }
 .containersoma{
@@ -31,7 +36,7 @@ border-radius: 25px;
     margin: 5%;
     text-align: center;
     padding: 2%;
-    padding-left: 10%;
+    padding-left:5%;
 
 }
 .image1>p ,.image2>p{
@@ -42,6 +47,44 @@ border-radius: 25px;
 }
 .container2>li{
     list-style: none;
+}
+.containersoma>ul>.containe1>img{
+    width: 15%;
+}
+.containe1{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    margin-left: 40%;
+    
+}
+.containe1>h2{
+    margin-top:5%
+
+}
+.image1:hover,.image2:hover{
+    color: rgb(111, 54, 13);
+}
+.options{
+  font-size: 30px;
+  font-family:New Century Schoolbook
+}
+.containerR{
+    box-shadow: 5px 10px 8px 10px #888888;
+    margin: 5%;
+    text-align: center;
+    padding: 2%;
+    padding-left:5%;
+    
+    
+}
+.btn-primary{
+    margin-left:2%;
+}
+#age{
+    width:10%;
+    border:solid 5px #683200   ;
+    border-radius: 10px;
 }
 
 

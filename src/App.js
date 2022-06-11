@@ -7,8 +7,13 @@ import SignUp from "./Pages/2.5 SignUp$Login/SignUp";
 import WelcomePage from "./Pages/2.2 Soma/WelcomePage";
 import RouterAllPages from "./Pages/4.RouterAllPages/RouterAllPages";
 
+
 function App() {
-  return <RouterAllPages />;
+  return (
+  <>
+  
+  <RouterAllPages />
+  </>);
 }
 
 export default App;

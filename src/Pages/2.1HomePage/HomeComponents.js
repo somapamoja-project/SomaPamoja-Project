@@ -23,7 +23,7 @@ export function Explanation() {
           <br /> coding in no time!
         </h1>
         <p>
-          we are non-profit organization, we create this platform to improve
+          we are start up organization, we create this platform to improve
           education among the refugees and help kids study where they are by
           introducing them into tech world.
         </p>
