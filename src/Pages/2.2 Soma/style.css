@@ -1,0 +1,47 @@
+li{
+    list-style: none;
+    list-style: none;
+}
+.image1>img{
+width: 90%;
+border-radius: 25px;
+
+}
+
+.image2>img{
+    width: 30%;
+    border-radius: 25px;
+    
+    
+   
+
+}
+.image1>img:hover,.image2>img:hover{
+    box-shadow: 5px 10px 8px 10px #888888;
+    
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    
+}
+.containersoma{
+    box-shadow: 5px 10px 8px 10px #888888;
+    margin: 5%;
+    text-align: center;
+    padding: 2%;
+    padding-left: 10%;
+
+}
+.image1>p ,.image2>p{
+    color: black;
+    
+   
+
+}
+.container2>li{
+    list-style: none;
+}
+
+

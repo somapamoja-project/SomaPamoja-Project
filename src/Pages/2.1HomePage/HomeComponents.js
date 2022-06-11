@@ -1,9 +1,11 @@
 import React from "react";
 import Logo2 from "../../Images/logo4.png";
-import Logo1 from "../../Images/OfficalLogo.png";
+import Logo1 from "../../Images/OfficalLogo1.png";
 import ExplainLogo from "../../Images/eplainOwl.gif";
+import { useNavigate } from "react-router-dom";
 
 export function Header() {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <img src={Logo2} className="logo4" alt="loading..." />
@@ -16,15 +18,18 @@ export function Explanation() {
   return (
     <div className="container1">
       <div>
-        <h1 className>Get your students<br/> coding in no time!</h1>
+        <h1 className="">
+          Get your students
+          <br /> coding in no time!
+        </h1>
         <p>
-          we are non-profit organization,  we create this platform to
-          improve education among the refugees and help kids study where they
-          are by introducing them into tech world.
+          we are non-profit organization, we create this platform to improve
+          education among the refugees and help kids study where they are by
+          introducing them into tech world.
         </p>
       </div>
       <div>
-        <img src={ExplainLogo} alt="loading..." />
+        <img src={ExplainLogo}  alt="loading..." />
       </div>
     </div>
   );

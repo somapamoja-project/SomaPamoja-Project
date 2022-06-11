@@ -1,16 +1,7 @@
-*{
-    margin: 0%;
-}
-.container{
-   
-}
 .container>.logo4{
     position: relative;
     right: 20%;
-    width: 140%;
-    height: 400px;
-  
-
+    width: 150%;
 }
 .container>.officialLogo{
     position: relative;
@@ -20,7 +11,7 @@
 }
 .container1{
     position: relative;
-    bottom: 1500px;
+    bottom: 200px;
     display: flex;
     flex-direction: row;
    
@@ -37,4 +28,21 @@
     font-family:Comic Sans MS;
     font-size: medium;
     margin-left: 100px;
+}
+
+.officialLogo{
+   position: relative;
+   top: 50%;
+}
+
+.container>.officialLogo{
+    position: relative;
+    bottom: 500px;
+    right: 200px;
+    width: 130%;
+}
+.container1>div>img{
+    position: relative;
+    bottom: 15%;
+    width: 70%;
 }
