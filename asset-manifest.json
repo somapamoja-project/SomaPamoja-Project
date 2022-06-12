@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SomaPamoja-Project/static/css/main.35159c18.css",
-    "main.js": "/SomaPamoja-Project/static/js/main.b858b918.js",
+    "main.js": "/SomaPamoja-Project/static/js/main.a26a5986.js",
     "static/js/787.ab750b28.chunk.js": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js",
     "static/media/Teacher.jpg": "/SomaPamoja-Project/static/media/Teacher.8bfb77df0547decbf122.jpg",
     "static/media/eplainOwl.gif": "/SomaPamoja-Project/static/media/eplainOwl.8917c027e72bbeed366f.gif",
@@ -12,11 +12,11 @@
     "static/media/owliequestion.png": "/SomaPamoja-Project/static/media/owliequestion.b482262e706cc8d78837.png",
     "index.html": "/SomaPamoja-Project/index.html",
     "main.35159c18.css.map": "/SomaPamoja-Project/static/css/main.35159c18.css.map",
-    "main.b858b918.js.map": "/SomaPamoja-Project/static/js/main.b858b918.js.map",
+    "main.a26a5986.js.map": "/SomaPamoja-Project/static/js/main.a26a5986.js.map",
     "787.ab750b28.chunk.js.map": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35159c18.css",
-    "static/js/main.b858b918.js"
+    "static/js/main.a26a5986.js"
   ]
 }
