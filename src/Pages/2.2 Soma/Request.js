@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import logoQ from "../../Images/owliequestion.png";
 import "./style.css";
+import ListeOfCourses from "./Courses/ListeOfCourses";
+import { Link } from "react-router-dom";
 
 export default function Request() {
   const [age, setAge] = useState();
@@ -16,7 +18,7 @@ export default function Request() {
 
     }
     else if(age.value>5 && age.value<18){
-        setAge('Go To our Free Course')
+        setAge(<FreeCourses/>)
 
 
     }
@@ -25,6 +27,7 @@ export default function Request() {
     }
     else(setAge(''))
   };
+  
   return (
     <div className='containerR'>
       <img src={logoQ} alt="loading..." />
@@ -34,4 +37,12 @@ export default function Request() {
       <h2>{age}</h2>
     </div>
   );
+
+}
+const FreeCourses=()=>{
+  return(
+    <>
+   <Link to="/FreeCourses">Go to Our FreeCourses</Link>
+    </>
+  )
 }

@@ -86,5 +86,22 @@ border-radius: 25px;
     border:solid 5px #683200   ;
     border-radius: 10px;
 }
+.ListCourses{
+ color: black;
+ display: flex;
+ flex-direction: column;
+ margin-left: 30%;
+ text-decoration: none;
+ 
+}
+.ListCourses>li{
+
+    font-size: 50px;
+    list-style-type: decimal;
+    text-align: left;
+    margin-bottom: 2%;
+    
+
+}
 
 
