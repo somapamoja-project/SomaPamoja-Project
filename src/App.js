@@ -1,19 +1,23 @@
-import NavBar from "./Pages/1.Navbar/NavBar";
+import react from "react";
+import { BrowserRouter, Routes, Route, Link, Redirect } from "react-router-dom";
 import Home from "./Pages/2.1HomePage/Home";
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import SignIn from "./Pages/2.5 SignUp$Login/SignIn";
-import SignUp from "./Pages/2.5 SignUp$Login/SignUp";
 import WelcomePage from "./Pages/2.2 Soma/WelcomePage";
-import RouterAllPages from "./Pages/4.RouterAllPages/RouterAllPages";
+import { useNavigate } from "react-router-dom";
+import NavBar from "./Pages/1.Navbar/NavBar";
+import Request from "./Pages/2.2 Soma/Request";
 
 
 function App() {
   return (
-  <>
-  
-  <RouterAllPages />
-  </>);
+    <BrowserRouter>
+    <NavBar />
+    <Routes>
+    <Route exact path="/" element={<Home />} />
+      <Route path="/request" element={<Request />} />
+      
+      <Route path="/welcome" element={<WelcomePage />} />
+    </Routes>
+  </BrowserRouter>);
 }
 
 export default App;
