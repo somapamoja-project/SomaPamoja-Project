@@ -6,6 +6,7 @@ import WelcomePage from "../2.2 Soma/WelcomePage";
 import NavBar from "../1.Navbar/NavBar";
 import Request from "../2.2 Soma/Request";
 import ListeOfCourses from "../2.2 Soma/Courses/ListeOfCourses";
+import ComputerFundamentals from "../2.2 Soma/Courses/Basics of computer/ComputerFundamentals";
 
 export default function RouterAllPages() {
   return (
@@ -14,9 +15,9 @@ export default function RouterAllPages() {
       <Routes>
         <Route path="/SomaPamoja-Project" element={<Home />} />
         <Route path="/request" element={<Request />} />
-
         <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/FreeCourses" element={<ListeOfCourses/>} />
+        <Route path='/FundamentalsComputer' element={<ComputerFundamentals/>} />
       </Routes>
     </BrowserRouter>
   );

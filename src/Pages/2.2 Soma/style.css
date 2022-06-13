@@ -94,6 +94,9 @@ border-radius: 25px;
  text-decoration: none;
  
 }
+.ListCourses:hover{
+    color: black;
+}
 .ListCourses>li{
 
     font-size: 50px;
@@ -102,6 +105,23 @@ border-radius: 25px;
     margin-bottom: 2%;
     
 
+}
+.containerC>ol>img{
+    position: relative;
+    top: 150px;
+    right: 40%;
+  width: 30%;
+}
+.containerC{
+    box-shadow: 5px 10px 8px 10px #888888;
+    margin: 5%;
+    text-align: center;
+    padding: 2%;
+    padding-left:5%;
+}
+.allCourses{
+    position: relative;
+    bottom: 150px;
 }
 
 
