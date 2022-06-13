@@ -48,3 +48,20 @@
 #navName1:hover,#navName2:hover,#navName3:hover,#navName4:hover{
     color: rgb(134, 74, 0);
 }
+.listNavlogo1{
+    width:0%
+}
+@media only screen and (max-width: 800px) and (min-width:10px){
+    .Navbar{
+        width:100%;
+        }
+
+        .listNav1>a>img{
+            width: 125%;
+            margin-left:center
+            }
+        .listNav2>li{
+            width: 35%;
+            
+        }
+}

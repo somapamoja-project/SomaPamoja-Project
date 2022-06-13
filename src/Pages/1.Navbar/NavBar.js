@@ -3,6 +3,7 @@ import "./Style.css";
 import Logo from "../../Images/OfficalLogo.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import logo1 from "../../Images/Lap.png"
 
 export default function NavBar() {
   const navigate = useNavigate();
@@ -12,6 +13,9 @@ export default function NavBar() {
       <li className="listNav1">
         <Link to='/'><img src={Logo} alt="loading..." /></Link>
       </li>
+    
+        <Link to='/' className="listNavlogo1" ><img src={logo1} alt="loading..." /></Link>
+     
       <div className="listNav2">
       <li className="listNav3"><Link to='/SomaPamoja-Project' id="navName1">Home </Link></li>
       <li className="listNav3"><Link to='/welcome'id="navName2">Soma</Link></li>
