@@ -21,10 +21,9 @@ export default function RouterAllPages() {
         <Route path="/request" element={<Request />} />
         <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/FreeCourses" element={<ListeOfCourses />} />
-        <Route path="/fundamentalofComputer" element={<ComputerFundamentals />}
-        />
+        <Route path="/fundamentalofComputer" element={<ComputerFundamentals />}/>
         <Route path="/basicsOfComputer" element={<BasicsOfComputer />} />
-        <Route path="/histoireofComputer" element={<HistoryofComputer />} />
+        <Route path="/historyofComputer" element={<HistoryofComputer />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/about" element={<About/>} />
       </Routes>

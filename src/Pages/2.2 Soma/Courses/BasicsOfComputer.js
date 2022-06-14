@@ -1,5 +1,5 @@
 import React from "react";
-import { Link ,useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function BasicsOfComputer() {
   const navigate = useNavigate();
@@ -7,8 +7,9 @@ export default function BasicsOfComputer() {
     <div>
       <h1> Basics Of Computer </h1>
       <ul>
-       <button onClick={()=>{navigate("/request")}}> <li>Computer Fundamentals</li></button>
-        <Link to="/histoireofComputer"><li>History of Computers</li></Link>
+        
+        <Link to="/fundamentalofComputer"><li>Computer Fundamentals</li></Link>
+        <Link to="/historyofComputer"><li>History and Generations of Computer </li></Link>
       </ul>
     </div>
   );
