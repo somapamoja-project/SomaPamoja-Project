@@ -2,6 +2,7 @@ body {
     
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
+  
   @media only screen and (max-width: 800px) and (min-width:10px){
     *{
         max-width: 100%;
@@ -73,6 +74,7 @@ body {
     }
     
     .listNav1>.listNav12>img{
+        display:flex;
         position: relative;
         top: 10%;
         right: 200px;
@@ -83,4 +85,5 @@ body {
     padding-right: 20%;
 }
     
+
   }

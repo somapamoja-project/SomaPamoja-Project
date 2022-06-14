@@ -48,3 +48,6 @@
 #navName1:hover,#navName2:hover,#navName3:hover,#navName4:hover{
     color: rgb(134, 74, 0);
 }
+.listNav12>img{
+    display: none;
+  }
