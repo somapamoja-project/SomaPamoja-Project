@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link, Redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Home from "../2.1HomePage/Home";
 import WelcomePage from "../2.2 Soma/WelcomePage";
 
@@ -11,6 +11,8 @@ import BasicsOfComputer from "../2.2 Soma/Courses/BasicsOfComputer";
 import HistoryofComputer from "../2.2 Soma/Courses/Basics of computer/HistoryofComputer";
 import About from "../2.3About/About";
 import Contact from "../2.4Contact/Contact";
+import PartyOfComputer from '../2.2 Soma/Courses/Basics of computer/PartyOfComputer'
+import ComputerVirusesAndSecurty from '../2.2 Soma/Courses/Basics of computer/ComputerVirusesAndSecurty'
 
 export default function RouterAllPages() {
   return (
@@ -26,6 +28,8 @@ export default function RouterAllPages() {
         <Route path="/historyofComputer" element={<HistoryofComputer />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/about" element={<About/>} />
+        <Route path="/PartyOfComputer" element={<PartyOfComputer/>}/>
+        <Route path="/ComputerVirusesAndSecurty" element={<ComputerVirusesAndSecurty/>}/>
       </Routes>
     </BrowserRouter>
   );

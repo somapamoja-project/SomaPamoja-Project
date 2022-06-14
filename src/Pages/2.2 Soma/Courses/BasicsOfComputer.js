@@ -10,6 +10,9 @@ export default function BasicsOfComputer() {
         
         <Link to="/fundamentalofComputer"><li>Computer Fundamentals</li></Link>
         <Link to="/historyofComputer"><li>History and Generations of Computer </li></Link>
+        <Link to="/PartyOfComputer"><li>Party of Computer </li></Link>
+        <Link to="/ComputerVirusesAndSecurty"><li>ComputerVirusesAndSecurty </li></Link>
+        
       </ul>
     </div>
   );
