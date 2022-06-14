@@ -1,6 +1,6 @@
 import React from "react";
 import './Style.css'
-import googlemap from './src/images/googlemap.png'; // gives image path
+import googlemap from '../../Images/googlemap.png'; // gives image path
 
 function Contact() {
     return (

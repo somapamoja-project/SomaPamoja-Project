@@ -3,6 +3,7 @@ import{Link} from 'react-router-dom'
 import'../style.css'
 import imageD from"../../../Images/owlteacher.png"
 
+
 function ListeOfCourses() {
   return (
     <div className='containerC'>
@@ -10,7 +11,7 @@ function ListeOfCourses() {
       <ol>
       <img src={imageD} alt='loading...' />
       <div className='allCourses'>
-      <Link to='/FundamentalsComputer' className='ListCourses'><li >Basics of computer </li> </Link>
+      <Link to='/BasicsOfComputer' className='ListCourses'><li >Basics of computer </li> </Link>
         <Link to='' className='ListCourses'><li >Typing and Keyboarding </li></Link>
         <Link to='' className='ListCourses'><li >Emailing </li></Link>
         <Link to='' className='ListCourses'><li >Going Online Safely</li></Link>

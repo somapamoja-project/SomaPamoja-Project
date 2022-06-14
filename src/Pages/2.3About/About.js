@@ -1,7 +1,7 @@
 import React from "react";
 import './Style.css'
-import image5 from './src/images/image5.jpg'; // gives image path
-import somacomp1 from './src/images/somacomp1.jpg'; // gives image path
+import image5 from '../../Images/image5.jpg'; // gives image path
+import somacomp1 from '../../Images/somacomp1.jpg'; // gives image path
 
 
 function About() {

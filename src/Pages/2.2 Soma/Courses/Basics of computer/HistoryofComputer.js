@@ -2,7 +2,7 @@ import React from 'react'
 import owllearningimg from '../../../../Images/owlLearning.png'
 import './style.css'
 
-export default function HistoireofComputer() {
+export default function HistoryofComputer() {
     const LinkVideo="https://www.youtube.com/embed/G19ldX05Gb4"
   return (
 <div className='containerFC'> 
