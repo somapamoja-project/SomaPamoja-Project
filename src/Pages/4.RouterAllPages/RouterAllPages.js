@@ -16,6 +16,12 @@ import ComputerVirusesAndSecurty from '../2.2 Soma/Courses/Basics of computer/Co
 import DiffenceBWM from '../2.2 Soma/Courses/Basics of computer/DiffenceBWM'
 import ClassificationSize from "../2.2 Soma/Courses/Basics of computer/ClassificationSize"
 import BasicComputerMaintenance from '../2.2 Soma/Courses/Basics of computer/BasicComputerMaintenance'
+import WorkingWithDeskTop from "../2.2 Soma/Courses/Basics of computer/WorkingWithDeskTop"
+import WorkingWindows from '../2.2 Soma/Courses/Basics of computer/WorkingWindows'
+import IntroductionInternet from '../2.2 Soma/Courses/Basics of computer/IntroductionInternet'
+import  DisadvantagesOfUsingComputer from '../2.2 Soma/Courses/Basics of computer/DisadvantagesOfUsingComputer'
+import Generalkeyboardshortcuts from '../2.2 Soma/Courses/Basics of computer/Generalkeyboardshortcuts'
+
 
 export default function RouterAllPages() {
   return (
@@ -36,6 +42,11 @@ export default function RouterAllPages() {
         <Route path="/Difference-Between-Mac-Windows" element={<DiffenceBWM/>}/>
         <Route path="/Classification-Computers-Size" element={< ClassificationSize/>}/>
         <Route path="/Basic-Computer-Maintenance" element={<BasicComputerMaintenance/>}/>
+        <Route path="/Working-With-DeskTop" element={<WorkingWithDeskTop/>}/>
+        <Route path="/Working-with-Windows" element={<WorkingWindows/>}/>
+        <Route path="/Introduction-Internet" element={<IntroductionInternet/>}/>
+        <Route path="/Disadvantages-Of-Using-Computer" element={<DisadvantagesOfUsingComputer/>}/>
+        <Route path="/Generalkeyboardshortcuts" element={<Generalkeyboardshortcuts/>}/>
      
        
 

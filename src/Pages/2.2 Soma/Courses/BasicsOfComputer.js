@@ -15,11 +15,11 @@ export default function BasicsOfComputer() {
         <Link to="/Difference-Between-Mac-Windows"><li>  The Difference between Windows And Macs </li></Link>
         <Link to="/Classification-Computers-Size"><li> Classification Of Computer According To Size  </li></Link>
         <Link to="/Basic-Computer-Maintenance"><li> Basic Computer Maintenance </li></Link>
-        <Link to="/ComputerVirusesAndSecurty"><li> Working With Desktop</li></Link>
-        <Link to="/ComputerVirusesAndSecurty"><li>Working with Windows</li></Link>
-        <Link to="/ComputerVirusesAndSecurty"><li> Introduction To The Internet</li></Link>
-        <Link to="/ComputerVirusesAndSecurty"><li> Disadvantages Of Using Computer </li></Link>
-        <Link to="/ComputerVirusesAndSecurty"><li>General keyboard shortcuts</li></Link>
+        <Link to="/Working-With-DeskTop"><li> Working With Desktop</li></Link>
+        <Link to="/Working-with-Windows"><li>Working with Windows</li></Link>
+        <Link to="/Introduction-Internet"><li> Introduction To The Internet</li></Link>
+        <Link to="/Disadvantages-Of-Using-Computer"><li> Disadvantages Of Using Computer </li></Link>
+        <Link to="/Generalkeyboardshortcuts"><li>General keyboard shortcuts</li></Link>
 
         
       </ul>
