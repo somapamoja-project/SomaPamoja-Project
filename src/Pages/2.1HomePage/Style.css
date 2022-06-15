@@ -46,3 +46,15 @@
     bottom: 15%;
     width: 70%;
 }
+.VideoDescription{
+    text-align: center;
+   
+}
+.VideoDescription>iframe{
+    position: relative;
+    bottom: 130px;
+    border-radius: 45px;
+
+    
+
+}

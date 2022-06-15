@@ -13,6 +13,9 @@ import About from "../2.3About/About";
 import Contact from "../2.4Contact/Contact";
 import PartyOfComputer from '../2.2 Soma/Courses/Basics of computer/PartyOfComputer'
 import ComputerVirusesAndSecurty from '../2.2 Soma/Courses/Basics of computer/ComputerVirusesAndSecurty'
+import DiffenceBWM from '../2.2 Soma/Courses/Basics of computer/DiffenceBWM'
+import ClassificationSize from "../2.2 Soma/Courses/Basics of computer/ClassificationSize"
+import BasicComputerMaintenance from '../2.2 Soma/Courses/Basics of computer/BasicComputerMaintenance'
 
 export default function RouterAllPages() {
   return (
@@ -30,6 +33,12 @@ export default function RouterAllPages() {
         <Route path="/about" element={<About/>} />
         <Route path="/PartyOfComputer" element={<PartyOfComputer/>}/>
         <Route path="/ComputerVirusesAndSecurty" element={<ComputerVirusesAndSecurty/>}/>
+        <Route path="/Difference-Between-Mac-Windows" element={<DiffenceBWM/>}/>
+        <Route path="/Classification-Computers-Size" element={< ClassificationSize/>}/>
+        <Route path="/Basic-Computer-Maintenance" element={<BasicComputerMaintenance/>}/>
+     
+       
+
       </Routes>
     </BrowserRouter>
   );

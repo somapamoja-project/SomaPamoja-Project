@@ -1,6 +1,6 @@
 import "./Style.css";
 import React from "react";
-import { Header, Explanation } from "./HomeComponents";
+import { Header, Explanation,VideoDescription } from "./HomeComponents";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
     <div>
       <Header />
       <Explanation />
+      <VideoDescription/>
     </div>
   );
 }
