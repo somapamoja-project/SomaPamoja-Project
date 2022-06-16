@@ -6,6 +6,7 @@ import WelcomePage from "../2.2 Soma/WelcomePage";
 import NavBar from "../1.Navbar/NavBar";
 import Request from "../2.2 Soma/Request";
 import ListeOfCourses from "../2.2 Soma/Courses/ListeOfCourses";
+import FooterContainer from '../3.Footer/containers/footer'
 
 export default function RouterAllPages() {
   return (
@@ -18,6 +19,10 @@ export default function RouterAllPages() {
         <Route path="/welcome" element={<WelcomePage />} />
         <Route path="/FreeCourses" element={<ListeOfCourses/>} />
       </Routes>
+     
+      
+
+      <FooterContainer/>
     </BrowserRouter>
   );
 }

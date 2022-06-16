@@ -22,7 +22,7 @@
 .container1>div>h1{
     font-family: Comic Sans MS;
     text-align: center
-    
+ 
 }
 .container1>div>p{
     font-family:Comic Sans MS;
@@ -45,4 +45,110 @@
     position: relative;
     bottom: 15%;
     width: 70%;
+}
+.courses{
+    position: relative;
+    bottom: 200px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.courses>div>img{
+    position: relative;
+    bottom: 15%;
+    width: 30%;
+    margin-left: 250px;
+    top: 5%;
+}
+.courses>div>h1{
+    
+    text-align: center;
+    text-align: center;
+}
+.courses>div>h3{
+    text-align: center;
+    text-align: center;
+    text-align: center;
+}
+.courses>div>p{
+    font-family:Comic Sans MS;
+    font-size: medium;
+    margin-left: 100px;
+}
+.button{
+    width:50%;
+    height:200px ;
+    margin-left:200px;
+  color: yellowgreen;
+
+}
+.courses1>div>h1{
+    margin-left: 100px;
+    text-align: center;
+}
+.courses1{
+    position: relative;
+    bottom: 200px;
+    left: 10%;
+   
+
+   
+}
+.courses1>div>h1{
+    margin-left: 250px;
+    margin-right: 100px;
+    text-align: center;
+   
+}
+.courses1>div>img{
+    float: left;
+    width: 50%;
+    
+}
+.courses11{
+    display:flex;
+    flex-direction: row;
+    position: relative
+
+
+
+}
+.courses11>div>.course12{
+    width: 100px;
+    border-radius: 50%;
+    margin: 50px 120px;
+}
+
+
+.animateText{
+    position: relative;
+    left:100px;
+    
+    bottom: 900px;
+    text-transform: capitalize;
+    font-weight:bold;
+ 
+  margin-bottom: 10%;
+  font-size: 50px;
+  /* padding: "3em 3em 3em 3em"; */
+  
+ 
+}
+.courses{
+    margin-top: 170px;
+    
+}
+.course13{
+    display: flex;
+    flex-direction: row;
+
+}
+.content{
+    margin-left: 250px;
+    font-size:25px;
+    font-family:Comic Sans MS;
+}
+.imageSlider{
+    width:50%;
+    height: 200px;
 }
