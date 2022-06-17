@@ -2,6 +2,7 @@ import React from "react";
 import Logo2 from "../../Images/logo4.png";
 import Logo1 from "../../Images/OfficalLogo1.png";
 import ExplainLogo from "../../Images/eplainOwl.gif";
+import owllearningimg from '../../Images/owlLearning.png'
 import { useNavigate } from "react-router-dom";
 
 export function Header() {
@@ -34,3 +35,12 @@ export function Explanation() {
     </div>
   );
 }
+
+export  function VideoDescription() {
+  const LinkVideo="https://www.youtube.com/embed/GpXlVJcOmtI?controls=0&theme=dark&color=black"
+  return (
+    <div className='VideoDescription'> 
+    <iframe width="960" height="515" src={LinkVideo} title="YouTube video player" frameborder="0" ></iframe>
+    </div>)
+}
+
