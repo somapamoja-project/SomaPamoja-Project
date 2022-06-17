@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SomaPamoja-Project/static/css/main.4360f20d.css",
-    "main.js": "/SomaPamoja-Project/static/js/main.7d4a4080.js",
+    "main.css": "/SomaPamoja-Project/static/css/main.1852aa28.css",
+    "main.js": "/SomaPamoja-Project/static/js/main.91882078.js",
     "static/js/787.ab750b28.chunk.js": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js",
     "static/media/TestImage.jpg": "/SomaPamoja-Project/static/media/TestImage.45476c45896445a81683.jpg",
     "static/media/Teacher.jpg": "/SomaPamoja-Project/static/media/Teacher.8bfb77df0547decbf122.jpg",
@@ -24,12 +24,12 @@
     "static/media/Logo1.png": "/SomaPamoja-Project/static/media/Logo1.66f1411d6c20cc25331f.png",
     "static/media/cartoon.webp": "/SomaPamoja-Project/static/media/cartoon.64cb553c6bc92b579614.webp",
     "index.html": "/SomaPamoja-Project/index.html",
-    "main.4360f20d.css.map": "/SomaPamoja-Project/static/css/main.4360f20d.css.map",
-    "main.7d4a4080.js.map": "/SomaPamoja-Project/static/js/main.7d4a4080.js.map",
+    "main.1852aa28.css.map": "/SomaPamoja-Project/static/css/main.1852aa28.css.map",
+    "main.91882078.js.map": "/SomaPamoja-Project/static/js/main.91882078.js.map",
     "787.ab750b28.chunk.js.map": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4360f20d.css",
-    "static/js/main.7d4a4080.js"
+    "static/css/main.1852aa28.css",
+    "static/js/main.91882078.js"
   ]
 }
