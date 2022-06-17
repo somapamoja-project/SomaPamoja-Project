@@ -23,6 +23,9 @@ import  DisadvantagesOfUsingComputer from '../2.2 Soma/Courses/Basics of compute
 import Generalkeyboardshortcuts from '../2.2 Soma/Courses/Basics of computer/Generalkeyboardshortcuts'
 import Q1ComputerFundamentals from '../2.6 Questionnaire/Question In Basics of Computers/Q1ComputerFundamentals'
 import HomeQuestions from '../2.6 Questionnaire/HomeQuestions'
+import FooterContainer from '../3.Footer/containers/footer'
+import TypingKeyBoard from '../2.2 Soma/Courses/TypingKeyBoard'
+import  TypingPratice from '../2.2 Soma/Courses/TypingPratice/TypingPratice'
 
 
 
@@ -52,13 +55,15 @@ export default function RouterAllPages() {
         <Route path="/Disadvantages-Of-Using-Computer" element={<DisadvantagesOfUsingComputer/>}/>
         <Route path="/Generalkeyboardshortcuts" element={<Generalkeyboardshortcuts/>}/>
         <Route path="/Q1ComputerFundamentals" element={<Q1ComputerFundamentals/>}/>
+        <Route path="/Typing-KeyBoard" element={<TypingKeyBoard/>}/>
+        <Route path="/TypingPratice" element={<TypingPratice/>}/>
         <Route path="/HomeQuestions" element={<HomeQuestions header='Computer fondamantal'  Click='Start your Quiz in Computer Fundamentals ' GoTo='/Q1ComputerFundamentals'/>}/>
      
        
 
       </Routes>
       
-      
+      <FooterContainer/>
 
     </BrowserRouter>
   );

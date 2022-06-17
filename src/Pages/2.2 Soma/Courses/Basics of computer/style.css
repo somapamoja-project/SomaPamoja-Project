@@ -8,7 +8,7 @@
 }
 .containerFC>.QCF>button{
     position: relative;
-    top:150px;
+    top:70px;
     right: 330px;
     color: #ffffff;
    
@@ -28,13 +28,15 @@
 }
 .QCF{
     position: relative;
-   bottom: 450px;
+   bottom: 350px;
    left: 10%;
 }
 .containerFC>.QCF>p{
     font-size: 30px;
 }
 .QCF>iframe{
+    position: relative;
+    bottom: 150px;
     border-radius: 50px;
     color: #683200;
 }

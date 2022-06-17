@@ -84,24 +84,21 @@ body {
     width: 200%;
     padding-right: 20%;
 }
+.container>.logo4{
+    position: relative;
+    margin-left: 18%;
+}
+
+.container>.officialLogo{
+    position: absolute;
+    margin-left: 18%;
+}
+
+.container1{
+    position: relative;
+    margin-top:49%;
+}
 
 
 }
 
-@media only screen and (max-width: 800px) and (min-width:10px){
-    .container>.logo4{
-        position: relative;
-        margin-left: 18%;
-    }
-
-    .container>.officialLogo{
-        position: absolute;
-        margin-left: 18%;
-    }
-    
-    .container1{
-        position: relative;
-        margin-top:49%;
-    }
-    
-}
