@@ -21,6 +21,9 @@ import WorkingWindows from '../2.2 Soma/Courses/Basics of computer/WorkingWindow
 import IntroductionInternet from '../2.2 Soma/Courses/Basics of computer/IntroductionInternet'
 import  DisadvantagesOfUsingComputer from '../2.2 Soma/Courses/Basics of computer/DisadvantagesOfUsingComputer'
 import Generalkeyboardshortcuts from '../2.2 Soma/Courses/Basics of computer/Generalkeyboardshortcuts'
+import Q1ComputerFundamentals from '../2.6 Questionnaire/Question In Basics of Computers/Q1ComputerFundamentals'
+import HomeQuestions from '../2.6 Questionnaire/HomeQuestions'
+
 
 
 export default function RouterAllPages() {
@@ -28,6 +31,7 @@ export default function RouterAllPages() {
     <BrowserRouter>
       <NavBar />
       <Routes>
+      <Route path="*" element={<main style={{ padding: "1rem" }}> <p>There's nothing here!</p></main>}/>
         <Route path="/SomaPamoja-Project" element={<Home />} />
         <Route path="/request" element={<Request />} />
         <Route path="/welcome" element={<WelcomePage />} />
@@ -47,10 +51,15 @@ export default function RouterAllPages() {
         <Route path="/Introduction-Internet" element={<IntroductionInternet/>}/>
         <Route path="/Disadvantages-Of-Using-Computer" element={<DisadvantagesOfUsingComputer/>}/>
         <Route path="/Generalkeyboardshortcuts" element={<Generalkeyboardshortcuts/>}/>
+        <Route path="/Q1ComputerFundamentals" element={<Q1ComputerFundamentals/>}/>
+        <Route path="/HomeQuestions" element={<HomeQuestions header='Computer fondamantal'  Click='Start your Quiz in Computer Fundamentals ' GoTo='/Q1ComputerFundamentals'/>}/>
      
        
 
       </Routes>
+      
+      
+
     </BrowserRouter>
   );
 }

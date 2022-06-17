@@ -25,6 +25,7 @@ export default function BasicsOfComputer() {
         <Link to="/Introduction-Internet" className='ListCourses'><li> Introduction To The Internet</li></Link>
         <Link to="/Disadvantages-Of-Using-Computer" className='ListCourses'><li> Disadvantages Of Using Computer </li></Link>
         <Link to="/Generalkeyboardshortcuts" className='ListCourses'><li>General keyboard shortcuts</li></Link>
+        
 
         </div>
       </ol>

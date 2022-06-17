@@ -1,0 +1,54 @@
+#Display10sec{
+    position: absolute;
+    width: 80%;
+}
+#Diplay5sec{
+    position: inherit;
+    bottom: 10%;
+    margin-left: 10%;
+    width: 70%;
+}
+.btn-success{
+    margin-left: 30%;
+    margin-bottom: 20%;
+    width: 30%;
+    border-radius: 20%;
+}
+.btn-success:hover{
+    background-color: rgb(102, 50, 12);
+}
+.QHheader{
+    margin-left: 10%;
+    font-size: 70px;
+}
+#FirstAnswer{
+    color: rgb(102, 47, 7);
+}
+.list-group>h1{
+    margin-left: 20%;
+    padding: 2%;
+}
+.list-group>li{
+    width: 30%;
+    margin-left: 35%;
+}
+#answer,#answer1,#answer2{
+    margin: 2%;
+    margin-left: 40%;
+    border: solid rgb(119, 54, 8);
+    width: 10%;
+}
+.btn-danger{
+margin-left: 35%;
+width: 30%;
+margin-bottom: 10%;
+}
+
+.AllQuestions1{
+    position: relative;
+    bottom: 1600px;
+    margin-bottom: -300px;
+}
+.answer10{
+
+}
