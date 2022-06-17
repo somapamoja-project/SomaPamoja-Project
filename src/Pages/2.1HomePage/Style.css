@@ -75,11 +75,15 @@
     font-size: medium;
     margin-left: 100px;
 }
-.button{
-    width:50%;
-    height:200px ;
-    margin-left:200px;
-  color: yellowgreen;
+.btn-warning{
+    position: relative;
+   top: 250px;
+  right: 250px;
+  width:350px;
+  height:30%;
+  
+ 
+  
 
 }
 .courses1>div>h1{
@@ -103,6 +107,7 @@
 .courses1>div>img{
     float: left;
     width: 50%;
+   
     
 }
 .courses11{
@@ -115,16 +120,15 @@
 }
 .courses11>div>.course12{
     width: 100px;
-    border-radius: 50%;
-    margin: 50px 120px;
+    
+    
 }
-
 
 .animateText{
     position: relative;
     left:100px;
     
-    bottom: 900px;
+    bottom: 600px;
     text-transform: capitalize;
     font-weight:bold;
  
@@ -141,14 +145,32 @@
 .course13{
     display: flex;
     flex-direction: row;
+    margin-left:180px;
 
 }
 .content{
-    margin-left: 250px;
-    font-size:25px;
+    margin-left: 100px;
+    font-size:20px;
     font-family:Comic Sans MS;
 }
-.imageSlider{
-    width:50%;
-    height: 200px;
+
+.information{
+    position: relative;
+    bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+.information>div>p{
+    font-size:20px;
+    font-family:Comic Sans MS;
+}
+.content1{
+    margin-right: 10%;
+    
+    
+}
+.content1>img{
+margin-left:20%;
+width:80%
 }

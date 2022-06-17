@@ -6,10 +6,11 @@ import ExplainLogo from "../../Images/eplainOwl.gif";
 import { useNavigate } from "react-router-dom";
 import image from '../../Images/code game.jpg';
 import image1 from '../../Images/cartoon.webp';
-import image2 from '../../Images/cartoon1.png';
+import image2 from '../../Images/Logo1.png';
 import image3 from '../../Images/cartoon2.webp';
 import { Wave, } from "react-animated-text";
 import SimpleImageSlider from "react-simple-image-slider";
+import dashboard from '../../Images/dashboard.PNG'
 
 export function Header() {
   const navigate = useNavigate();
@@ -59,9 +60,9 @@ export function Courses(){
   <h1></h1>
   <div className="course13">
     <div className="imageSlider">
-  <SimpleImageSlider
-      width={800}
-      height={586}
+  <SimpleImageSlider className='imagee'
+      width={500}
+      height={250}
       images={images}
       showBullets={true}
       showNavs={true}
@@ -73,6 +74,9 @@ export function Courses(){
       Through somapamoja, kids will develop the necessary skills for the future while having fun!
       </p>
       </div>
+      
+      <button type="button" className="btn btn-warning">sign up now</button>
+     
 
 
    
@@ -96,26 +100,38 @@ export function Courses1(){
       
       
       <div className="courses11">
-        <div>
+        <div className="content1">
       <img src={image3} className="course12"  alt="loading..." /> 
-      <p>With somapamoja's teacher kit and support team, anyone can teach the basics of computer and coding</p>
+      <p>With somapamoja's teacher kit and support team,<br/> anyone can teach the basics of computer and coding</p>
       </div>
       <div>
       <img src={image2} className="course12" alt="loading..." />
-      <p>somapamoja's courses teach text-based coding so students learn to program like a real developer</p>
+      <p>somapamoja's courses teach text-based coding <br/> so students learn to program like a real developer</p>
       
       </div>
       <div>
       <img src={image1}className="course12"  alt="loading..." />
-      <p>Kids learn coding in an engaging and rewarding environment that utilizes gaming elements</p>
+      <p>Kids in somapamoja will enjoy learning coding since they will be thought in a simple and understandable manner</p>
       </div>
       
       </div>
+    </div>
+  )
+}
+export function Information(){
+  return(
+    <div className="information">
+      <div>
+        <h1>All you need to know about soma pamoja</h1>
+        <p>Equipped with student solutions, automatic grading and curriculum management,<br/>Somapamoja’s Classroom Dashboard allows you to effortlessly manage your students. </p>
+      </div>
+      <div>
+      <img src={dashboard}  alt="loading..." />
+      </div>
+      <div>
+        <p></p>
+      </div>
       
-      
-      
-      
-
     </div>
   )
 }
