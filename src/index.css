@@ -76,14 +76,32 @@ body {
     .listNav1>.listNav12>img{
         display:flex;
         position: relative;
-        top: 10%;
+        top: -9%;
         right: 200px;
-        width: 400px;
+        width: 300%;
     }
 .Navbar>.listNav>.listNav1{
     width: 200%;
     padding-right: 20%;
 }
-    
 
-  }
+
+}
+
+@media only screen and (max-width: 800px) and (min-width:10px){
+    .container>.logo4{
+        position: relative;
+        margin-left: 18%;
+    }
+
+    .container>.officialLogo{
+        position: absolute;
+        margin-left: 18%;
+    }
+    
+    .container1{
+        position: relative;
+        margin-top:49%;
+    }
+    
+}

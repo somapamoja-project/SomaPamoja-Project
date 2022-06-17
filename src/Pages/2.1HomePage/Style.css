@@ -46,6 +46,22 @@
     bottom: 15%;
     width: 70%;
 }
+
+
+@media only screen and (max-width: 800px) and (min-width:10px){
+    .officialLogo{
+        position: relative;
+        width:200px;
+        left: -20%;
+        
+        top:-115px ;
+        
+    }
+        
+    .ExplainLogo{
+        display: flex;
+        margin: top 3000px;
+    }
 .VideoDescription{
     text-align: center;
    
@@ -56,5 +72,4 @@
     border-radius: 45px;
 
     
-
 }

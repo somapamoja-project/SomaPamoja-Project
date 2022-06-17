@@ -30,7 +30,7 @@ export function Explanation() {
         </p>
       </div>
       <div>
-        <img src={ExplainLogo}  alt="loading..." />
+        <img src={ExplainLogo} className="ExplainLogo"  alt="loading..." />
       </div>
     </div>
   );

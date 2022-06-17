@@ -49,5 +49,6 @@
     color: rgb(134, 74, 0);
 }
 .listNav12>img{
-    display: none;
+    display: flex;
+    margin-top: 15%;
   }
