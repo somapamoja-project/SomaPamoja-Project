@@ -12,7 +12,6 @@ export default function BasicsOfComputer() {
       <ol>
       <img src={imageD} alt='loading...' />
       <div className='allCourses'>
-        
         <Link to="/fundamentalofComputer" className='ListCourses'><li>Computer Fundamentals</li></Link>
         <Link to="/historyofComputer" className='ListCourses'><li>History and Generations of Computer </li></Link>
         <Link to="/PartyOfComputer" className='ListCourses'><li>Party of Computer </li></Link>

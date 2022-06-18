@@ -1,10 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import {
-  createUserWithEmailAndPassword,
-  onAuthStateChanged,signOut
-} from "firebase/auth";
+import {createUserWithEmailAndPassword,onAuthStateChanged,signOut} from "firebase/auth";
 
 import { auth } from "../../firebase/Firebase-config";
+import './style.css'
 
 
 export default function SignUp() {
@@ -38,98 +36,61 @@ export default function SignUp() {
   },[]);
   
   return (
-    <form className="form1">
+    <form>
       {/*<!-- Email input -->*/}
       <h1>Register</h1>
-      <div className="form-outline mb-4">
+      <div >
         <input
           type="email"
           ref={refEmail}
           id="form2Example1"
-          className="form-control"
+        
         />
 
-        <label className="form-label" for="form2Example1">
+        <label  for="form2Example1">
           Email address
         </label>
       </div>
 
       {/*<!-- Password input -->*/}
-      <div className="form-outline mb-4">
+      <div >
         <input
           ref={refPass}
           type="password"
           id="form2Example2"
-          className="form-control"
+        
         />
-        <label className="form-label" for="form2Example2">
+        <label  for="form2Example2">
           Password
         </label>
       </div>
 
       {/*<!-- 2 column grid layout for inline styling -->*/}
-      <div className="row mb-4">
-        <div className="col d-flex justify-content-center">
+      <div >
+        <div >
           {/*<!-- Checkbox -->*/}
-          <div className="form-check">
+          <div >
             <input
-              className="form-check-input"
+            
               type="checkbox"
               value=""
               id="form2Example31"
               checked
             />
-            <label className="form-check-label" for="form2Example31">
+            <label  for="form2Example31">
               {" "}
               Remember me{" "}
             </label>
           </div>
         </div>
-
-        <div className="col">
-          {/* <!-- Simple link -->*/}
-          <a href="#!">Forgot password?</a>
-        </div>
       </div>
 
       {/* Submit button -->*/}
-      <button
-        type="button"
-        className="btn btn-primary btn-block mb-4"
-        onClick={Register}
-      >
-        Register
-      </button>
-      <button
-        type="button"
-        className="btn btn-primary btn-block mb-4"
-        onClick={logOut}
-      >
-        signOut
-      </button>
+      <button type="button"onClick={Register}>Register</button>
+      <button type="button"onClick={logOut}>signOut</button>
 
       {/**<!-- Register buttons -->*/}
-      <div className="text-center">
-        <p>
-          Not a member? <a href="#!">Register</a>
-        </p>
-        <p>or sign up with:</p>
-        <button type="button" className="btn btn-link btn-floating mx-1">
-          <i className="fab fa-facebook-f"></i>
-        </button>
-
-        <button type="button" className="btn btn-link btn-floating mx-1">
-          <i className="fab fa-google"></i>
-        </button>
-
-        <button type="button" className="btn btn-link btn-floating mx-1">
-          <i className="fab fa-twitter"></i>
-        </button>
-
-        <button type="button" className="btn btn-link btn-floating mx-1">
-          <i className="fab fa-github"></i>
-        </button>
-      </div>
+      
       <p>{user?.email}</p>
     </form>
   );

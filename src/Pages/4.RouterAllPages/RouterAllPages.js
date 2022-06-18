@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Home from "../2.1HomePage/Home";
 import WelcomePage from "../2.2 Soma/WelcomePage";
-
 import NavBar from "../1.Navbar/NavBar";
 import Request from "../2.2 Soma/Request";
 import ListeOfCourses from "../2.2 Soma/Courses/ListeOfCourses";
@@ -26,6 +25,10 @@ import HomeQuestions from '../2.6 Questionnaire/HomeQuestions'
 import FooterContainer from '../3.Footer/containers/footer'
 import TypingKeyBoard from '../2.2 Soma/Courses/TypingKeyBoard'
 import  TypingPratice from '../2.2 Soma/Courses/TypingPratice/TypingPratice'
+import CreateEmailing from '../2.2 Soma/Courses/CreateEmailing'
+import CreateEmail from'../2.2 Soma/Courses/Create your ancount/CreateEmail'
+import GoingOnlineSafely from '../2.2 Soma/Courses/GoingOnlineSafely'
+import SignUp from '../2.5 SignUp$Login/SignUp'
 
 
 
@@ -34,7 +37,8 @@ export default function RouterAllPages() {
     <BrowserRouter>
       <NavBar />
       <Routes>
-      <Route path="*" element={<main style={{ padding: "1rem" }}> <p>There's nothing here!</p></main>}/>
+      <Route path="*" element={<main style={{ padding: "1rem",color:'red' }}> <p>ERROR PAGE</p></main>}/>
+       <Route path="" element={<Home />} />
         <Route path="/SomaPamoja-Project" element={<Home />} />
         <Route path="/request" element={<Request />} />
         <Route path="/welcome" element={<WelcomePage />} />
@@ -58,7 +62,10 @@ export default function RouterAllPages() {
         <Route path="/Typing-KeyBoard" element={<TypingKeyBoard/>}/>
         <Route path="/TypingPratice" element={<TypingPratice/>}/>
         <Route path="/HomeQuestions" element={<HomeQuestions header='Computer fondamantal'  Click='Start your Quiz in Computer Fundamentals ' GoTo='/Q1ComputerFundamentals'/>}/>
-     
+        <Route path="/CreateEmailing" element={<CreateEmailing/>}/>
+        <Route path="/CreateEmail" element={<CreateEmail/>}/>
+        <Route path="/GoingOnlineSafely" element={<GoingOnlineSafely/>}/>
+        <Route path="/SignUp" element={<SignUp/>}/>
        
 
       </Routes>

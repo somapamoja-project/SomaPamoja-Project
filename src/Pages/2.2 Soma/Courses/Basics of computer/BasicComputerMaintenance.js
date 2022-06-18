@@ -1,6 +1,7 @@
 import React from 'react'
 import owllearningimg from '../../../../Images/owlLearning.png'
 import {useNavigate} from 'react-router-dom'
+import './style.css'
 
 
 function BasicComputerMaintenance() {

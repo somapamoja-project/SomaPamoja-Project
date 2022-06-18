@@ -136,7 +136,46 @@ border-radius: 25px;
     border-radius: 25px; 
  
 }
-.QCF1>button{
+#btnPractice{
     position: relative;
- margin: 10%
+    top: 70px;
+    right: 300px;
+    border-radius: 25px;
 }
+.QCF2{
+    position: relative;
+  left: 5%;
+  bottom: 200px;
+ 
+}
+.QCF2>iframe{
+    border-radius: 25px;
+}
+.QCF2>#btnEmail{
+    position: relative;
+    top: 70px;
+    right: 20%;
+    border-radius: 25px;
+}
+#btnGotoFree{
+    background-color: #683200;
+    border: none;
+    margin: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+#btnGotoFree1{
+    background-color: #683200;
+    border: none;
+    margin: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    width: 10%;
+}
+#btnEmail>a{
+    color: white;
+}
+

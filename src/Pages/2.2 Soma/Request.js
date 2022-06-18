@@ -23,7 +23,7 @@ export default function Request() {
 
     }
     else if(age.value>=18){
-        setAge('Create an account')
+        setAge(<SignUp/>)
     }
     else(setAge(''))
   };
@@ -33,7 +33,7 @@ export default function Request() {
       <img src={logoQ} alt="loading..." />
       <h3>What is your Age?</h3>
       <input type="number" classname='form-control' id="age" placeholder="   age" />
-      <button  onClick={Redirect} className='btn btn-primary' >Send</button>
+      <button  onClick={Redirect} className='btn btn-primary' id="btnGotoFree1">Submit</button>
       <h2>{age}</h2>
     </div>
   );
@@ -42,7 +42,14 @@ export default function Request() {
 const FreeCourses=()=>{
   return(
     <>
-   <Link to="/FreeCourses">Go to Our FreeCourses</Link>
+   <Link to="/FreeCourses" className="btn btn-info" id="btnGotoFree">Go to Our FreeCourses</Link>
+    </>
+  )
+}
+const SignUp=()=>{
+  return(
+    <>
+   <Link to="/SignUp" className="btn btn-info" id="btnGotoFree">Create an Account</Link>
     </>
   )
 }
