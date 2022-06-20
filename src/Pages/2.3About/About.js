@@ -35,24 +35,28 @@ function About() {
      Dessai Kibeho 
      <p class="title">CEO & Founder</p>
         <p>dessai@gmail.com</p>
+        <p><button class="button">Contact</button></p>
         </h4>
 
       <h4 className="shukri1">
       Fatma Shukri
       <p class="title">Chief Financial Officer</p>
         <p>shukri@gmail.com</p>
+        <p><button class="button">Contact</button></p>
         </h4>
 
         <h4 className="loty1">
          Lotiang Nyathio
          <p class="title">Operation officer</p>
         <p>lotylobalu12@gmail.com</p>
+        <p><button class="button">Contact</button></p>
         </h4>
 
         <h4 className="elie1">
          Elie Bavon
          <p class="title">Technology officer</p>
         <p>elie137@gmail.com</p>
+        <p><button class="button">Contact</button></p>
         </h4>
 
       
