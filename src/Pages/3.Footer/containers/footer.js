@@ -1,17 +1,22 @@
 import React from 'react'
 import Footer from '../components/footer'
+import { Link } from 'react-router-dom'
 import Icon from '../components/icons'
+import './style.css'
+import OfficalLogo from '../../../Images/My project (9).png'
+
 
  export default function FooterContainer() {
     return (
-        <Footer>
+       
+        <Footer  >
+             
             <Footer.Wrapper>
             <Footer.Row>
                 <Footer.Column>
                 <Footer.Title>About Us</Footer.Title>
-                    <Footer.Link href="#"></Footer.Link>
-                    <Footer.Link href="#"></Footer.Link>
-                    <Footer.Link href="#"></Footer.Link>
+                    <Link className='imgLogo' to='/about'><img src={OfficalLogo} alt='loading'/></Link>
+                   
                 </Footer.Column>
                 <Footer.Column>
                 <Footer.Title>Services</Footer.Title>
@@ -32,10 +37,13 @@ import Icon from '../components/icons'
                     <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-youtube" />Youtube</Footer.Link>
-                    <Footer.Link href="#"><Icon className="fab fa-twitter" />Twitter</Footer.Link>
+
                 </Footer.Column>
             </Footer.Row>
-            </Footer.Wrapper>
+            </Footer.Wrapper> 
+        
+           
         </Footer>
+        
     )
 }
