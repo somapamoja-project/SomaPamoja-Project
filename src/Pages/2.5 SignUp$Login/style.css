@@ -8,3 +8,59 @@
 .text-center{
     margin-right:70% ;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container2{
+    margin: 5%;
+}
+.container>.container4{
+    margin: 2%;
+    margin-left: 40%;
+
+}
+#submitEmail{
+    width: 10%;
+    margin: 3%;
+    margin-left: 40%;
+    background-color: rgb(135, 66, 17);
+    
+}
+#submitEmail:hover{
+    background-color:rgb(103, 74, 53) ;
+}
+.btnSignUp{
+    background-color: transparent;
+    border: solid rgb(145, 66, 10);
+    width: 10%;
+    border-radius: 30px;
+
+    margin: 2%;
+    margin-left: 40%;
+
+   
+
+}
+.btnSignUp>img{
+    width: 90%;
+   
+   
+
+}
+.container4>label{
+    margin-right: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container>h1{
+    margin-left: 40%;
+}
+.container4>input{
+    
+    width: 50%;
+    height: 50px;
+    border: solid rgb(145, 66, 10);
+    font-size: 20px ;
+}
+
+

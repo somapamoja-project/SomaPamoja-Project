@@ -22,7 +22,7 @@ export default function WelcomePage() {
         <Link to='/request' className='image1'> <img src={photo1} alt='loading...'/><p className='options'>Student</p> </Link>
         </li>
         <li>
-        <Link to='/SignUp' className='image2'><img src={photo2} alt='loading...'/> <p className='options'>Teacher or Guardian</p></Link>
+        <Link to='/SigningUp' className='image2'><img src={photo2} alt='loading...'/> <p className='options'>Teacher or Guardian</p></Link>
 
         </li>
         </div>
