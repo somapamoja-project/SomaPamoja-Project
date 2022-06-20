@@ -53,7 +53,7 @@ export default function SigningUp() {
         <input id='Password' type='password'  placeholder='Password' />
         </div>
         <button class="btn btn-primary" id='submitEmail' onClick={Submit}>Submit</button>
-        <button onClick={Display} className='btnSignUp'><img  src={ SignUp}/></button>
+        <button onClick={Display} id='btnSignUp' ><img  src={ SignUp}/></button>
         <h1 id='userEmail'></h1>
 
     </div>

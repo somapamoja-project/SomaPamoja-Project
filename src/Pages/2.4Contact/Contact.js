@@ -10,12 +10,12 @@ function Contact() {
     <p>Swing by to introduce your kids into coding, or leave us a message:</p>
   
 
-      <img src={googlemap} className='googlemap' alt='nature' width='60' height='40'>
+      <img src={googlemap} className='googlemap' alt='nature' width='60' height='40'/>
 
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
         <label for="country">Country</label>
         <select id="country" name="country">
           <option value="kakuma">Kakuma</option>
@@ -24,7 +24,7 @@ function Contact() {
         </select>
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit"/>
         
       
 </div>

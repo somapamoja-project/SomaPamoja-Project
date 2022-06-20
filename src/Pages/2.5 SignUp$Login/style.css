@@ -30,7 +30,7 @@
 #submitEmail:hover{
     background-color:rgb(103, 74, 53) ;
 }
-.btnSignUp{
+#btnSignUp{
     background-color: transparent;
     border: solid rgb(145, 66, 10);
     width: 10%;
@@ -38,12 +38,16 @@
 
     margin: 2%;
     margin-left: 40%;
+ 
+    
 
    
 
 }
-.btnSignUp>img{
+#btnSignUp>img{
     width: 90%;
+  
+
    
    
 
