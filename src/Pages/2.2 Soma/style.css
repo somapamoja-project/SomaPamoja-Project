@@ -111,7 +111,7 @@ border-radius: 25px;
     position: relative;
     top: 150px;
     right: 40%;
-  width: 30%;
+    width: 30%;
 }
 .containerC{
     box-shadow: 5px 10px 8px 10px #888888;
@@ -127,6 +127,126 @@ border-radius: 25px;
 .containerC>h1{
     font-size: 70px;
 }
+
+
+@media only screen and (max-width: 800px) and (min-width:10px){
+    li{
+        list-style: none;
+    }
+    .image1>img{
+    width: 90%;
+    height: 110px;
+    border-radius: 25px;
+    margin-top: 150px;  
+    }
+    .image2>img{
+        position: relative;
+        width:80%;
+
+    }
+    
+    .container2{
+        display: flex;
+        margin-left: -16%;
+        border-radius: 25px;      
+    
+    }
+    .image1>img:hover,.image2>img:hover{
+        box-shadow: 5px 10px 8px 10px #888888;
+        list-style:none;
+        text-decoration:none;
+        
+    }
+    .containersoma{
+        box-shadow: 5px 10px 8px 10px #888888;
+        margin: 5%;
+        text-align: center;
+        padding: 2%;
+        padding-left:5%;
+    
+    }
+    .image1>p ,.image2>p{
+        color: black;
+        
+       
+    
+    }
+    .container2>li{
+        list-style: none;
+        display: flex;
+        margin: 5%;
+        margin-left: -1%;
+    }
+    .containe1>img{
+        display: flex;
+        width: 20%;
+        margin-left: -60%;
+
+    }
+
+    .containe1>h2{
+        margin-top: 8%;
+    
+    }
+    
+    .options{
+      font-size: 30px;
+      font-family:New Century Schoolbook
+    }
+    
+    .btn-primary{
+        margin-left:5%;
+    }
+    #age{
+        width:25%;
+        border:solid 5px #683200   ;
+        border-radius: 10px;
+    }
+    .ListCourses{
+     color: black;
+     display: flex;
+     flex-direction: column;
+     margin-right:-30%;
+     margin-top: 120px;
+     text-decoration: none;
+     
+    }
+    .ListCourses:hover{
+        color: black;
+    }
+    .ListCourses>li{
+    
+        font-size: 22px;
+        list-style-type: decimal;
+        text-align: left;
+        margin-top: 28%;
+    }
+    .containerC>ol>img{
+        position: relative;
+        top: 10px;
+        right: 0%;
+        width: 40%;
+    }
+    .containerC{
+        box-shadow: 5px 10px 8px 10px #888888;
+        margin: 5%;
+        text-align: center;
+        
+        padding-left:5%;
+    }
+    .allCourses{
+        position: relative;
+        padding: 40%;
+        margin: -20%;
+        top: -150px;
+    }
+    .containerC>h1{
+        position: relative;
+        font-size: 30px;
+    }
+}
+
+
 .QCF1{
   position: relative;
   left: 5%;
@@ -192,3 +312,4 @@ border-radius: 25px;
 .containerR{
     padding-bottom: 10%;
 }
+

@@ -210,29 +210,50 @@ width:80%
 
 
 
+.VideoDescription{
+    position: relative;
+    text-align: center;
+     width:100%;
+     height: 200%;
+     bottom: 120px;
+}
+
 
 @media only screen and (max-width: 800px) and (min-width:10px){
     .officialLogo{
         position: relative;
         width:200px;
         left: -20%;
-        
+
         top:-115px ;
         
-    }
+    } 
         
     .ExplainLogo{
         display: flex;
         margin: top 3000px;
+
+        
+    }
+
     }}
+
 .VideoDescription{
-    text-align: center;
-   
+   text-align: center;
+    width:100%;
+    height: 200%;
+
 }
 .VideoDescription>iframe{
     position: relative;
-    bottom: 130px;
-    border-radius: 45px;
+    width: 68%;
+    height: 0%;
+    bottom: 10px;
+    border-radius: 25px;
+}
+
+
+}
 
     
 }
