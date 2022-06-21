@@ -29,6 +29,8 @@ import CreateEmailing from "../2.2 Soma/Courses/CreateEmailing";
 import CreateEmail from "../2.2 Soma/Courses/Create your ancount/CreateEmail";
 import GoingOnlineSafely from "../2.2 Soma/Courses/GoingOnlineSafely";
 import SigningUp from "../2.5 SignUp$Login/SigningUp.js";
+import FormPage from '../2.5 SignUp$Login/FormPage'
+import User from '../5.Dashbord/User'
 
 
 export default function RouterAllPages() {
@@ -109,7 +111,9 @@ export default function RouterAllPages() {
         <Route path="/CreateEmail" element={<CreateEmail />} />
         <Route path="/GoingOnlineSafely" element={<GoingOnlineSafely />} />
         <Route path="/SigningUp" element={<SigningUp />} />
+        <Route path="/User" element={<User/>}/>
       </Routes>
+      <FormPage/>
 
       <FooterContainer />
      

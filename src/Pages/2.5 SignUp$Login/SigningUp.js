@@ -1,13 +1,19 @@
 import React from 'react'
 
 import {createUserWithEmailAndPassword,onAuthStateChanged,signOut,signInWithPopup,GoogleAuthProvider} from "firebase/auth";
+import{useNavigate} from'react-router-dom'
 
 import { auth } from "../../firebase/Firebase-config";
 import'./style.css'
 import SignUp from '../../Images/SignUp.png'
+import {useState} from 'react'
+
+
 
 
 export default function SigningUp() {
+  const [userDetails,setuserDetails]=useState({})
+  const navigation=useNavigate()
    async function Submit(){
         var email=document.getElementById('Email').value
         var password=document.getElementById('Password').value
@@ -25,19 +31,23 @@ export default function SigningUp() {
          
           })  }
           catch(err){ console.log(err.message)}
-          
-
-        
-          
+          setTimeout(()=>{return navigation('/about')},5000)       
     }
-    async function Display(){
+
+
+    async function SignUpwithGoogle(){
+  
+        
       const provider=new GoogleAuthProvider()
      await signInWithPopup(auth,provider)
-     .then((user) =>{console.log(user)})
-     .catch((err)=>{console.log(err)})
-      
-
+     setTimeout(()=>{navigation("/User")},10000)
+     
+  
+     
     }
+
+
+    
    
   return (
     <div className='container'>
@@ -53,10 +63,11 @@ export default function SigningUp() {
         <input id='Password' type='password'  placeholder='Password' />
         </div>
         <button class="btn btn-primary" id='submitEmail' onClick={Submit}>Submit</button>
-        <button onClick={Display} id='btnSignUp' ><img  src={ SignUp}/></button>
+        <button onClick={SignUpwithGoogle} id='btnSignUp' ><img  src={ SignUp}/></button>
         <h1 id='userEmail'></h1>
 
     </div>
   )
   
 }
+
