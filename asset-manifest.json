@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SomaPamoja-Project/static/css/main.e13b05f3.css",
-    "main.js": "/SomaPamoja-Project/static/js/main.c615ad51.js",
+    "main.css": "/SomaPamoja-Project/static/css/main.ff53ffee.css",
+    "main.js": "/SomaPamoja-Project/static/js/main.55850ef2.js",
     "static/js/787.ab750b28.chunk.js": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js",
     "static/media/TestImage.jpg": "/SomaPamoja-Project/static/media/TestImage.45476c45896445a81683.jpg",
     "static/media/Teacher.jpg": "/SomaPamoja-Project/static/media/Teacher.8bfb77df0547decbf122.jpg",
@@ -14,8 +14,8 @@
     "static/media/kibeho.png": "/SomaPamoja-Project/static/media/kibeho.49eec70a1464e7df06fe.png",
     "static/media/OfficalLogo.png": "/SomaPamoja-Project/static/media/OfficalLogo.ae812595c5b1bf0a98e0.png",
     "static/media/logo4.png": "/SomaPamoja-Project/static/media/logo4.9a2d569fd77f8aa573b2.png",
-    "static/media/dashboard.PNG": "/SomaPamoja-Project/static/media/dashboard.fa64b655fd62fef68e90.PNG",
     "static/media/image5.jpg": "/SomaPamoja-Project/static/media/image5.a5b98194da8fd9ba1c29.jpg",
+    "static/media/dashboard11.PNG": "/SomaPamoja-Project/static/media/dashboard11.d415b2b602683ab87a32.PNG",
     "static/media/owlLearning.png": "/SomaPamoja-Project/static/media/owlLearning.0e6174afb0cb63e7aa60.png",
     "static/media/OfficalLogo1.png": "/SomaPamoja-Project/static/media/OfficalLogo1.5fcb4eac5eb9c27e1c23.png",
     "static/media/cartoon2.webp": "/SomaPamoja-Project/static/media/cartoon2.3eb3b060147602b0328d.webp",
@@ -26,14 +26,15 @@
     "static/media/elie.jpg": "/SomaPamoja-Project/static/media/elie.9069340d4d1791eeab1d.jpg",
     "static/media/owliequestion.png": "/SomaPamoja-Project/static/media/owliequestion.b482262e706cc8d78837.png",
     "static/media/Logo1.png": "/SomaPamoja-Project/static/media/Logo1.66f1411d6c20cc25331f.png",
+    "static/media/Teacher.PNG": "/SomaPamoja-Project/static/media/Teacher.4f32ef4c4adc275171b4.PNG",
     "static/media/cartoon.webp": "/SomaPamoja-Project/static/media/cartoon.64cb553c6bc92b579614.webp",
     "index.html": "/SomaPamoja-Project/index.html",
-    "main.e13b05f3.css.map": "/SomaPamoja-Project/static/css/main.e13b05f3.css.map",
-    "main.c615ad51.js.map": "/SomaPamoja-Project/static/js/main.c615ad51.js.map",
+    "main.ff53ffee.css.map": "/SomaPamoja-Project/static/css/main.ff53ffee.css.map",
+    "main.55850ef2.js.map": "/SomaPamoja-Project/static/js/main.55850ef2.js.map",
     "787.ab750b28.chunk.js.map": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e13b05f3.css",
-    "static/js/main.c615ad51.js"
+    "static/css/main.ff53ffee.css",
+    "static/js/main.55850ef2.js"
   ]
 }
