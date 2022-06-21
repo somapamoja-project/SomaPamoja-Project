@@ -1,3 +1,121 @@
-body{
-    background-color: rgb(129, 57, 6);
+.container *{
+  margin: 0;
+  padding: 0;
 }
+
+.responsive {
+    position: relative;
+    right: 20%;
+    width: 139%;
+    height: -50%;
+    background-color: brown;
+    margin: 0 auto;
+    
+  }
+
+  .header{
+    color:white;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    right: 20%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  .p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-top: 5%;
+  }
+
+  .kibeho {
+    
+    border-radius: 50%;
+    width: 20%;
+    height: 50%;
+    margin-top: 10%;
+    float: right;
+  }
+  .shukri {
+   
+    border-radius: 50%;
+    width: 20%;
+    height: 50%;
+    margin-top: 10%;
+    float: left;
+}
+
+.elie{
+  border-radius: 50%;
+  width: 22%;
+  height: 50%;
+  margin-top: 10%;
+  float: right;
+  margin-right: 6%;
+}
+
+.loty {
+    
+  border-radius: 50%;
+  width: 20%;
+  height: 50%;
+  margin-top: 10%;
+  float: right;
+  margin-right: 4%;
+}
+
+
+  h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    float: right;
+  }
+
+  .para h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 5%;
+  }
+  
+  .para{
+    font-size: 50px;
+    margin-top: 5%;
+    font: 1em sans-serif;
+    margin-left: 0.5%;
+    word-spacing: 5px;
+    color: black;
+    display: grid;
+    background-image: url(https://images.https://www.google.com/search?q=background+images+with+computer&tbm=isch&ved=2ahUKEwiI38Gkg7r4AhUZ-BoKHWfqCFkQ2-cCegQIABAA&oq=background+images+with+com&gs_lcp=CgNpbWcQARgAMgUIABCABDoHCAAQsQMQQzoECAAQQzoGCAAQHhAIOgQIABAYUPYFWMJLYKFdaABwAHgAgAHaAogBhhiSAQUyLTQuNpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=4lqvYojmNZnwa-fUo8gF&bih=722&biw=1536#imgrc=iZhRKpr9UDQTeM.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+     }
+
+  .para h4{
+    margin-top: 2%;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5%;
+     background-color: grey;
+  }
+
+  .shukri1{
+    margin-top: -8%;
+  }
+
+  .kibeho1{
+    margin-top: 6%;
+    margin-left: 85%;
+  }
+
+  .loty1{
+    margin-left: 58%;
+    margin-top: -10%;
+  }
+
+  .elie1{
+    margin-left: 30%;
+    margin-top: -10%;
+  }

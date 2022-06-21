@@ -1,6 +1,6 @@
 .containerFC{
     box-shadow: 5px 10px 8px 10px #888888;
-    margin: 5%;
+    margin: 2%;
     text-align: center;
     padding: 2%;
     padding-left:5%;
@@ -8,11 +8,10 @@
 }
 .containerFC>.QCF>button{
     position: relative;
-    top:150px;
+    top:-100px;
     right: 330px;
     color: #ffffff;
-   
-
+    border-radius: 25px;
 }
 .containerFC>button:hover{
     background-color: #683200;
@@ -23,21 +22,22 @@
     top: 50px;
     right: 40%;
     width: 30%;
- 
-
 }
 .QCF{
     position: relative;
-   bottom: 450px;
-   left: 10%;
+    bottom: 300px;
+    left: 10%;
 }
 .containerFC>.QCF>p{
     font-size: 30px;
 }
 .QCF>iframe{
+    position: relative;
+    bottom: 150px;
     border-radius: 50px;
     color: #683200;
 }
+
 
 @media only screen and (max-width: 800px) and (min-width:10px){
     .containerFC{
@@ -81,3 +81,8 @@
         color: #683200;
     }
 }
+.btn-success{
+    position: relative;
+    bottom: 200px;
+}
+

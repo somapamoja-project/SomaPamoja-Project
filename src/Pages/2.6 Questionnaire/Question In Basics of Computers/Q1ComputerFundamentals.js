@@ -13,7 +13,7 @@ export default function Q1ComputerFundamentals() {
     const SecondAnswer=document.getElementById('SecondAnswer')
     const ThirdAnswer=document.getElementById('ThirdAnswer')
 
-    displayAnswer.innerText=answers
+    displayAnswer.innerHTML=answers
     FirstAnswer.innerText='2.Charles Babage'
     SecondAnswer.innerText='3.Babbage Difference Engine'
     ThirdAnswer.innerText='1.Father of computer'
@@ -63,7 +63,7 @@ export default function Q1ComputerFundamentals() {
    <div >
     <img className='QuestionOwl' src={QuestionOwl} alt='loading...' />
     <div className='AllQuestions1'>
-      <h1>20 Questions in Computer Fundamentals </h1>
+      <h1 className='headerQ'>20 Questions in Computer Fundamentals </h1>
       <ol class="list-group">
   <h1>A.Who is the Father of computer</h1>
   <li class="list-group-item"> 1.Styve Job</li>
@@ -118,10 +118,14 @@ export default function Q1ComputerFundamentals() {
 
       </div>
       <button className=' btn btn-danger' onClick={Reponse}>Result</button>
+      <button className='btn btn-warning'>Store Your Points</button>
       <h1 id='answer10'></h1>
+      
 
    </div>
+   
    </div>
+   
    </div>
       </div>
     

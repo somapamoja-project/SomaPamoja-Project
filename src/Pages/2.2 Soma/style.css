@@ -85,6 +85,7 @@ border-radius: 25px;
     width:10%;
     border:solid 5px #683200   ;
     border-radius: 10px;
+    
 }
 .ListCourses{
  color: black;
@@ -126,6 +127,7 @@ border-radius: 25px;
 .containerC>h1{
     font-size: 70px;
 }
+
 
 @media only screen and (max-width: 800px) and (min-width:10px){
     li{
@@ -242,5 +244,72 @@ border-radius: 25px;
         position: relative;
         font-size: 30px;
     }
+}
+
+
+.QCF1{
+  position: relative;
+  left: 5%;
+  bottom: 200px;
+  
+}
+.QCF1>iframe{
+    border-radius: 25px; 
+ 
+}
+#btnPractice{
+    position: relative;
+    top: 70px;
+    right: 300px;
+    border-radius: 25px;
+}
+.QCF2{
+    position: relative;
+  left: 5%;
+  bottom: 200px;
+ 
+}
+.QCF2>iframe{
+    border-radius: 25px;
+}
+.QCF2>#btnEmail{
+    position: relative;
+    top: 70px;
+    right: 20%;
+    border-radius: 25px;
+}
+#btnGotoFree{
+    background-color: #683200;
+    border: none;
+    margin: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+#btnGotoFree1{
+    background-color: #683200;
+    border: none;
+    margin: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    width: 10%;
+}
+#btnEmail>a{
+    color: white;
+}
+.ListCourses>iframe{
+    width:80%;
+    border-radius: 30px;
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+.containerR>h2{
+    position: relative;
+    right: 35%;
+}
+.containerR{
+    padding-bottom: 10%;
 }
 
