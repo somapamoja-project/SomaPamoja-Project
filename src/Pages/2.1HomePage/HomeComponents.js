@@ -9,8 +9,9 @@ import image2 from '../../Images/Logo1.png';
 import image3 from '../../Images/cartoon2.webp';
 import { Wave, } from "react-animated-text";
 import SimpleImageSlider from "react-simple-image-slider";
-import dashboard from '../../Images/dashboard.PNG'
+import dashboard from '../../Images/dashboard11.PNG'
 import { useNavigate } from "react-router-dom";
+import image4 from '../../Images/Teacher.PNG' 
 
 export function Header() {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ export function Explanation() {
       <div>
         <h1 className="">
           Get your students
-          <br /> coding in no time!
+          <br /> learning in no time!
         </h1>
         <p>
           we are start up organization, we create this platform to improve
@@ -53,8 +54,8 @@ export  function VideoDescription() {
 export function Courses(){
   const images = [
     { url: "https://scontent.fmba5-1.fna.fbcdn.net/v/t39.30808-6/288612840_108805771866325_183099304846223457_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=egN4K-K3NU4AX__V-qi&tn=mA5XeuC9OQa1IcEB&_nc_ht=scontent.fmba5-1.fna&oh=00_AT8V_enuMD781behf63nzbPoYiJ3RuI3uWg68wvvfqx9JQ&oe=62B0BC58" },
-    { url: "https://scontent.fmba5-1.fna.fbcdn.net/v/t39.30808-6/288679644_108865141860388_323768465840298021_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=uJdzZZbnYd8AX8hSMC-&_nc_ht=scontent.fmba5-1.fna&oh=00_AT8Z1gu52my23HDWAbKLCfNREuXtBhubcRr6JEkL5PsniQ&oe=62AF9DCD" },
-      { url: "https://thumbs.dreamstime.com/b/girl-scouts-mother-sitting-using-laptop-countryside-196425989.jpg" },
+    { url:"https://scontent.fmba5-1.fna.fbcdn.net/v/t39.30808-6/277797382_1907653869436579_5619949131787129103_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=4WcGkJehPqUAX8eNXvC&tn=MjkGuGI4tVybOnrw&_nc_ht=scontent.fmba5-1.fna&oh=00_AT_7Tt8-Lk1GHKZMe-8Jn-DeIWbqWfqZsL6BlBXgTX7oHw&oe=62B4BD89" },
+      { url: "https://scontent.fmba5-1.fna.fbcdn.net/v/t39.30808-6/277800337_1907653989436567_770745322142359077_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=6lKQhn4MG7AAX-4V8up&_nc_ht=scontent.fmba5-1.fna&oh=00_AT9pzDG6yejNqOr5QVWCXx00PrITJ9tM1YT4w-OlkB58Og&oe=62B50732"},
   { url: "https://scontent.fmba5-1.fna.fbcdn.net/v/t39.30808-6/277812097_1907653926103240_8513118274476311862_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=H9ylHMAh76sAX9egaRk&_nc_ht=scontent.fmba5-1.fna&oh=00_AT8XvvhuJHZyHOxbZZpcqgTby0h7FRuNuCzA4PHcTMEKoQ&oe=62B06E1E" },
     
   ];  
@@ -112,12 +113,12 @@ export function Courses1(){
       <img src={image3} className="course12"  alt="loading..." /> 
       <p>With somapamoja's teacher kit and support team,<br/> anyone can teach the basics of computer and coding</p>
       </div>
-      <div>
+      <div className="content1" >
       <img src={image2} className="course12" alt="loading..." />
       <p>somapamoja's courses teach text-based coding <br/> so students learn to program like a real developer</p>
       
       </div>
-      <div>
+      <div className="content1" >
       <img src={image1}className="course12"  alt="loading..." />
       <p>Kids in somapamoja will enjoy learning coding since they will be thought in a simple and understandable manner</p>
       </div>
@@ -129,17 +130,17 @@ export function Courses1(){
 export function Information(){
   return(
     <div className="information">
-      <div>
+       <div className="content2">
+        
         <h1>All you need to know about soma pamoja</h1>
+       
         <p>Equipped with student solutions, automatic grading and curriculum management,<br/>Somapamoja’s Classroom Dashboard allows you to effortlessly manage your students. </p>
-      </div>
-      <div>
+        </div>
+        
+      <div className="content2">
+     
       <img src={dashboard}  alt="loading..." />
       </div>
-      <div>
-        <p></p>
-      </div>
-      
     </div>
   )
 }
