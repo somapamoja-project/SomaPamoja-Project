@@ -31,6 +31,7 @@ import GoingOnlineSafely from "../2.2 Soma/Courses/GoingOnlineSafely";
 import SigningUp from "../2.5 SignUp$Login/SigningUp.js";
 import FormPage from '../2.5 SignUp$Login/FormPage'
 import User from '../5.Dashbord/User'
+import SigningIn from "../2.5 SignUp$Login/LogIn";
 
 
 export default function RouterAllPages() {
@@ -112,8 +113,9 @@ export default function RouterAllPages() {
         <Route path="/GoingOnlineSafely" element={<GoingOnlineSafely />} />
         <Route path="/SigningUp" element={<SigningUp />} />
         <Route path="/User" element={<User/>}/>
+        <Route path="/SigningIn" element={<SigningIn/>}/>
       </Routes>
-      <FormPage/>
+     
 
       <FooterContainer />
      

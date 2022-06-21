@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
   signInWithPopup,
@@ -14,22 +14,25 @@ import "./style.css";
 import SignUp from "../../Images/SignUp.png";
 import { useState } from "react";
 
-export default function SigningUp() {
+export default function SigningIn() {
   const [userDetails, setuserDetails] = useState({});
   const navigation = useNavigate();
+
   async function Submit() {
     var email = document.getElementById("Email").value;
     var password = document.getElementById("Password").value;
     var UserEmail = document.getElementById("userEmail");
+    
 
     try {
-      await createUserWithEmailAndPassword(auth, email, password).then(
+      await signInWithEmailAndPassword(auth, email, password).then(
         (data) => {
           if (data) {
             navigation("/User");
           } else {
             var noData = document.getElementById("userEmail");
-            noData.innerText = "Error try again";
+            noData.innerText = "You do not have an account  ";
+            document.getElementById('CreateA').style.display='flex'
           }
           return data;
         }
@@ -41,7 +44,7 @@ export default function SigningUp() {
     }
   }
 
-  async function SignUpwithGoogle() {
+  async function SignINwithGoogle() {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
@@ -58,7 +61,7 @@ export default function SigningUp() {
 
   return (
     <div className="container">
-      <h1>Sign Up</h1>
+      <h1>LogIN</h1>
 
       <div className="container4">
         <input id="Email" type="text" placeholder="Email" />
@@ -70,11 +73,11 @@ export default function SigningUp() {
       <button class="btn btn-primary" id="submitEmail" onClick={Submit}>
         Submit
       </button>
-      <button onClick={SignUpwithGoogle} id="btnSignUp">
+      <button onClick={SignINwithGoogle} id="btnSignUp">
         <img src={SignUp} />
       </button>
       <h1 id="userEmail"></h1>
-      <Link to='/SigningIn'className="btn btn-primary" id="createA"> Already have an Account</Link>
+      <Link to='/SigningUp' className="btn btn-primary" id="createA">Create an Account </Link>
     </div>
   );
 }

@@ -61,5 +61,20 @@
     border: solid rgb(145, 66, 10);
     font-size: 20px ;
 }
+#userEmail{
+    color: red;
+}
+#createA{
+    background-color: rgb(119, 55, 9);
+    width: 30%;
+    margin: 2%;
+    margin-left: 40%;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#createA:hover{
+    background-color: rgb(69, 34, 8); 
+}
 
 

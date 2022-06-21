@@ -12,8 +12,12 @@ import SimpleImageSlider from "react-simple-image-slider";
 import dashboard from '../../Images/dashboard11.PNG'
 import { useNavigate } from "react-router-dom";
 import image4 from '../../Images/Teacher.PNG' 
+import'./Style.css'
+import { Link } from "react-router-dom";
+
 
 export function Header() {
+  
   const navigate = useNavigate();
   return (
     <div className="container">
@@ -84,7 +88,7 @@ export function Courses(){
       </p>
       </div>
       
-      <button type="button" className="btn btn-warning">sign up now</button>
+      <Link to='/request'className="btn btn-warning" id="btnSignup"><button type="button" >Sign Up now </button></Link>
      
 
 
@@ -95,7 +99,7 @@ export function Courses(){
   
  </div>
  <div className='animateText'>
-    <Wave text="Teach kids for basic courses" effect="fadeOut" effectChange={1.0} />
+    <Wave className='header3' text="Teach kids for basics of Computer and Coding" effect="fadeOut" effectChange={0.8} />
 </div>
  </>
 
@@ -105,7 +109,7 @@ export function Courses1(){
   return(
     <div className="courses1">
       
-        <h1>kids will enjoy to learn computer basics and coding with Soma Pamoja</h1>
+        <h1 className="header10">KIDS WILL ENJOY TO LEARN COMPUTER BASICS AND CODING WITH SOMA PAMOJA </h1> <br/>
       
       
       <div className="courses11">
@@ -120,7 +124,7 @@ export function Courses1(){
       </div>
       <div className="content1" >
       <img src={image1}className="course12"  alt="loading..." />
-      <p>Kids in somapamoja will enjoy learning coding since they will be thought in a simple and understandable manner</p>
+      <p>Kids in somapamoja will enjoy learning coding since<br/> they will be thought in a simple and understandable manner</p>
       </div>
       
       </div>
@@ -132,7 +136,7 @@ export function Information(){
     <div className="information">
        <div className="content2">
         
-        <h1>All you need to know about soma pamoja</h1>
+        <h1>All you need to know about Soma Pamoja</h1>
        
         <p>Equipped with student solutions, automatic grading and curriculum management,<br/>Somapamoja’s Classroom Dashboard allows you to effortlessly manage your students. </p>
         </div>

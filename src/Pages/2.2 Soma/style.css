@@ -85,6 +85,7 @@ border-radius: 25px;
     width:10%;
     border:solid 5px #683200   ;
     border-radius: 10px;
+    
 }
 .ListCourses{
  color: black;
@@ -183,4 +184,11 @@ border-radius: 25px;
     border-radius: 30px;
     margin-top:10%;
     margin-bottom: 10%;
+}
+.containerR>h2{
+    position: relative;
+    right: 35%;
+}
+.containerR{
+    padding-bottom: 10%;
 }

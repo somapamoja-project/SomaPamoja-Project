@@ -1,6 +1,8 @@
 body {
+  
     
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    
   }
   
   @media only screen and (max-width: 800px) and (min-width:10px){

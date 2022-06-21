@@ -33,7 +33,7 @@ export default function Request() {
       />
       <button onClick={Redirect} className="btn btn-primary" id="btnGotoFree1">
         Submit
-      </button>
+      </button> <br/>
       <h2>{age}</h2>
     </div>
   );
