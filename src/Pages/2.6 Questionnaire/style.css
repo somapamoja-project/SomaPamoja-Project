@@ -52,3 +52,59 @@ margin-bottom: 10%;
 .answer10{
 
 }
+
+@media only screen and (max-width: 800px) and (min-width:10px){
+    #Display10sec{
+        position: absolute;
+        width: 80%;
+    }
+    #Diplay5sec{
+        position: inherit;
+        bottom: 10%;
+        margin-left: 10%;
+        width: 70%;
+    }
+    .btn-success{
+        margin-left: 30%;
+        margin-bottom: 30%;
+        width: 30%;
+        border-radius: 20%;
+    }
+    .btn-success:hover{
+        background-color: rgb(102, 50, 12);
+    }
+    .QHheader{
+        margin-left: 10%;
+        font-size: 50px;
+    }
+   
+    .list-group>h1{
+        margin-left: 25%;
+        padding: 2%;
+    }
+    .list-group>li{
+        width: 40%;
+        margin-left: 35%;
+    }
+    #answer,#answer1,#answer2{
+        margin: 2%;
+        margin-left: 40%;
+        border: solid rgb(119, 54, 8);
+        width: 20%;
+    }
+    /* .btn-danger{
+    margin-left: 35%;
+    width: 30%;
+    margin-bottom: 10%;
+    }
+     */
+    .AllQuestions1{
+        position: relative;
+        bottom: 000px;
+    }
+    /* .answer10{
+    
+    } */
+} #FirstAnswer{
+        color: rgb(102, 47, 7);
+    }

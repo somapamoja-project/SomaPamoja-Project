@@ -38,3 +38,46 @@
     border-radius: 50px;
     color: #683200;
 }
+
+@media only screen and (max-width: 800px) and (min-width:10px){
+    .containerFC{
+        box-shadow: 5px 10px 8px 10px #888888;
+        margin: 5%;
+        text-align: center;
+        padding: 2%;
+        padding-left:5%;
+        padding-bottom: 5%;
+    }
+    
+    .containerFC>.QCF>button{
+        position: relative;
+        width: 45%;
+        display: flex;
+        left: -50px;
+        color: #ffffff;
+    }
+    .containerFC>button:hover{
+        background-color: #683200;
+        color: white;
+    }
+    .containerFC>img{
+        position: relative;
+        top: 30px;
+        margin-left: 50%;
+        width: -20%;
+    }
+    
+    .QCF{
+        position: relative;
+        bottom: -60px;
+        left: 2%;
+    }
+    .containerFC>.QCF>p{
+        font-size: 30px;
+    }
+    .QCF>iframe{
+        border-radius: 50px;
+        left: 2%;
+        color: #683200;
+    }
+}
