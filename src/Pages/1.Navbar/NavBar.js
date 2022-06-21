@@ -13,7 +13,7 @@ import User from "../5.Dashbord/User";
 
 export default function NavBar() {
 
-  console.log(typeof(User))
+  
   const logeOut = () => {
     signOut(auth);
     document.getElementById("Get").style.display = "flex";

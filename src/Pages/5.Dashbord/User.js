@@ -2,6 +2,7 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import React, { useEffect } from "react";
 import { auth } from "../../firebase/Firebase-config";
 import { useState } from "react";
+import usePng from '../../Images/usePng.png'
 import "./Style.css";
 import NavBar from "../1.Navbar/NavBar";
 
@@ -33,12 +34,16 @@ function User() {
   if (user.displayName === null) {
     console.log("form");
   }
-  console.log(user?.email);
+  console.log(user?.photoURL);
   return (
     <div className="UseName">
+      <div className="imageUser">
+      <img src={usePng}  alt='No Image'/>
+      </div>
       
-      {user?.email}
-      {user?.displayName}
+
+     <name className='userName' >{user?.email}</name> 
+    <name className='userName'>{user?.displayName}</name>  
     </div>
   );
 }
