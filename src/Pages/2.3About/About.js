@@ -14,7 +14,7 @@ function About() {
   return (
     <div className="container">
     
-     <img src={image5} className="responsive" alt="Nature" width='600' height='400' />
+     <img src={image5} className="responsive" alt="Nature" width='600' height='500' />
      <h3 className='p'>
       <h2 className="header">
         ABOUT US<br/>
@@ -22,44 +22,65 @@ function About() {
       </h2>
       We are a team of experts in technology, gaming and pedagogy who<br/> together solve the equation of learning to code.<br/>
      </h3>
-    
 
-     <img src={kibeho} className="kibeho" alt="Nature" width='60' height='40' />
-
-      <img src={loty} className="loty" alt="Nature" width='60' height='40' /> 
-
-      <img src={elie} className="elie" alt="Nature" width='60' height='40' /> 
-
-     <img src={Teacher} className="shukri" alt="Nature" width='60' height='40' />
-     <h4 className="kibeho1">
-     Dessai Kibeho 
-     <p class="title">CEO & Founder</p>
+     <h2>Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+    <img src={kibeho} className="kibeho" alt="Nature" width='100%' height='300px' />
+      <div class="drum">
+        <h5>Dessai Kibeho</h5>
+        <p class="title">CEO & Founder</p>
+        <p>Experience in Firebase, UI and React js.</p>
         <p>dessai@gmail.com</p>
         <p><button class="button">Contact</button></p>
-        </h4>
+      </div>
+      </div>
+      </div>
 
-      <h4 className="shukri1">
-      Fatma Shukri
-      <p class="title">Chief Financial Officer</p>
+
+  <div class="column">
+    <div class="card">
+    <img src={Teacher} className="shukri" alt="Nature" width='100%' height='300px' />
+      <div class="drum">
+        <h5>Fatma Shukri</h5>
+        <p class="title">Operation officer</p>
+        <p>experience in design and operations.</p>
         <p>shukri@gmail.com</p>
         <p><button class="button">Contact</button></p>
-        </h4>
-
-        <h4 className="loty1">
-         Lotiang Nyathio
-         <p class="title">Operation officer</p>
-        <p>lotylobalu12@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-        </h4>
-
-        <h4 className="elie1">
-         Elie Bavon
-         <p class="title">Technology officer</p>
-        <p>elie137@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-        </h4>
+      
+      </div>
+      </div>
 
       
+  {/* {/* <div class="column">
+    <div class="card">
+    <img src={elie} className="elie" alt="Nature" width='100%' height='200px' /> 
+      <div class="drum">
+        <h5>Elie Bavon</h5>
+        <p class="title">Technology officer</p>
+        <p>His a very experience in Program cordination.</p>
+        <p>elie137@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      
+      </div>
+      </div> */}
+
+     
+  {/* <div class="column">
+    <div class="card">
+    <img src={Teacher} className="shukri" alt="Nature" width='100%' height='200px' />
+      <div class="drum">
+        <h5>Fatma Shukri</h5>
+        <p class="title">Financial Officer</p>
+        <p>His a very experience in finance.</p>
+        <p>shukri@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      
+      </div>
+      </div>  */}
+    
+  
      <p className="para">
      <h2>OUR STORIES</h2><br/>
            Think for a while about your kids and imagine about there future where you need them to be and to become
@@ -98,8 +119,10 @@ We aim to create an engaging platform where programming knowledge is acquired al
               
              </p>
              
-        
-    
+             </div>
+             </div>
+             {/* </div>  */}
+             {/* </div> */}
     </div>
   );
 }

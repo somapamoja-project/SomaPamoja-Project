@@ -1,7 +1,4 @@
-.container *{
-  margin: 0;
-  padding: 0;
-}
+
 
 .responsive {
     position: relative;
@@ -32,41 +29,7 @@
     margin-top: 5%;
   }
 
-  .kibeho {
-    
-    border-radius: 50%;
-    width: 20%;
-    height: 50%;
-    margin-top: 10%;
-    float: right;
-  }
-  .shukri {
-   
-    border-radius: 50%;
-    width: 20%;
-    height: 50%;
-    margin-top: 10%;
-    float: left;
-}
-
-.elie{
-  border-radius: 50%;
-  width: 22%;
-  height: 50%;
-  margin-top: 10%;
-  float: right;
-  margin-right: 6%;
-}
-
-.loty {
-    
-  border-radius: 50%;
-  width: 20%;
-  height: 50%;
-  margin-top: 10%;
-  float: right;
-  margin-right: 4%;
-}
+  
 
 
   h2{
@@ -90,8 +53,8 @@
     word-spacing: 5px;
     color: black;
     display: grid;
-    background-image: url(https://images.https://www.google.com/search?q=background+images+with+computer&tbm=isch&ved=2ahUKEwiI38Gkg7r4AhUZ-BoKHWfqCFkQ2-cCegQIABAA&oq=background+images+with+com&gs_lcp=CgNpbWcQARgAMgUIABCABDoHCAAQsQMQQzoECAAQQzoGCAAQHhAIOgQIABAYUPYFWMJLYKFdaABwAHgAgAHaAogBhhiSAQUyLTQuNpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=4lqvYojmNZnwa-fUo8gF&bih=722&biw=1536#imgrc=iZhRKpr9UDQTeM.com/photos/585752/pexels-photo-585752.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-     }
+    margin-left: -100%;
+ }
 
   .para h4{
     margin-top: 2%;
@@ -101,21 +64,61 @@
      background-color: grey;
   }
 
-  .shukri1{
-    margin-top: -8%;
-  }
+  
+  
 
-  .kibeho1{
-    margin-top: 6%;
-    margin-left: 85%;
+  *, *:before, *:after {
+    box-sizing: inherit;
   }
+  
 
-  .loty1{
-    margin-left: 58%;
-    margin-top: -10%;
+  .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+   
+    
   }
-
-  .elie1{
-    margin-left: 30%;
-    margin-top: -10%;
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
   }
+  .drum {
+    padding: 0 16px;
+  }
+  
+  .drum::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 780px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
