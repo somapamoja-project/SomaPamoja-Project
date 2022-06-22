@@ -23,7 +23,7 @@ function Contact() {
           <option value="kakuma-town">Kakuma Town</option>
         </select>
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." style={"height:170px"}></textarea>
         <input type="submit" value="Submit"/>
         
       

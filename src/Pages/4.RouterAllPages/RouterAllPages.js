@@ -34,6 +34,7 @@ import User from '../5.Dashbord/User'
 import SigningIn from "../2.5 SignUp$Login/LogIn";
 
 
+
 export default function RouterAllPages() {
   return (
     <BrowserRouter>
@@ -115,6 +116,7 @@ export default function RouterAllPages() {
         <Route path="/User" element={<User/>}/>
         <Route path="/SigningIn" element={<SigningIn/>}/>
       </Routes>
+      
      
 
       <FooterContainer />
