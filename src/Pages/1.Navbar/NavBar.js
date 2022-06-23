@@ -60,7 +60,7 @@ export default function NavBar() {
           </li>
           
           <li className="listNav3" id="loginVannish" >
-            <Link to="/SigningUp" id="navName4">
+            <Link to="/SigningIn" id="navName4">
              Login 
             </Link>
           </li>

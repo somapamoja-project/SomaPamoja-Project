@@ -239,15 +239,20 @@ width:80%
     }
 
 .VideoDescription{
+    position: relative;
+  margin-top: 2%;
+  margin-bottom: 45%;
+  right: 2%;
+  
    text-align: center;
     width:100%;
-    height: 200%;
+    height: 200px;
 
 }
 .VideoDescription>iframe{
     position: relative;
     width: 68%;
-    height: 0%;
+    height: 200%;
     bottom: 10px;
     border-radius: 25px;
 }

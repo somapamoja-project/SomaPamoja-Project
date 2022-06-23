@@ -32,6 +32,9 @@ import SigningUp from "../2.5 SignUp$Login/SigningUp.js";
 import FormPage from '../2.5 SignUp$Login/FormPage'
 import User from '../5.Dashbord/User'
 import SigningIn from "../2.5 SignUp$Login/LogIn";
+import Payment from '../5.Dashbord/Payment'
+import ListOfCourses from '../2.2 Soma/PremiumCourse/ListOfCourses'
+import Practice from '../2.2 Soma/PremiumCourse/Practice/Practice'
 
 
 
@@ -115,11 +118,15 @@ export default function RouterAllPages() {
         <Route path="/SigningUp" element={<SigningUp />} />
         <Route path="/User" element={<User/>}/>
         <Route path="/SigningIn" element={<SigningIn/>}/>
+        <Route path="/Payment" element={<Payment/>}/>
+        <Route path="/ListOfCourses" element={<ListOfCourses/>}/>
+        <Route path="/Practice" element={<Practice/>}/>
       </Routes>
       
      
 
       <FooterContainer />
+      
      
     </BrowserRouter>
   );
