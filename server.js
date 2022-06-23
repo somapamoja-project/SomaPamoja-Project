@@ -4,7 +4,7 @@
  require('dotenv').config();
  const Stripe=require('stripe')(process.env.SECRET_KEY);
  var cors=require('cors');
-const { async } = require('@firebase/util');
+
 
  const app=express();
  app.use(bodyParser.json());

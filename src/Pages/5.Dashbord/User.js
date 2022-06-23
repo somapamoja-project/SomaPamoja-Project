@@ -28,7 +28,8 @@ function User() {
         }
       });
     } catch (err) {
-      console.log(err.message);
+      console.log(err.code);
+      
     }
   }, []);
   
@@ -39,7 +40,7 @@ function User() {
   return (
     <div className="UseName">
       <div className="imageUser">
-      <img src={usePng}  alt='No Image'/>
+      <img src='https://www.w3schools.com/images/w3schools_green.jpg'  alt='No Image'/>
       </div>
       
 

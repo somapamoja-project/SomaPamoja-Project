@@ -40,6 +40,9 @@ export default function SigningUp() {
       var noData = document.getElementById("userEmail");
       noData.innerText = "Error try again";
       console.log(err.message);
+      if(err.code === 'auth/email-already-in-use'){
+        alert('user already available')
+      }
     }
   }
 
