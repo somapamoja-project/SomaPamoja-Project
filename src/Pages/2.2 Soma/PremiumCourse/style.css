@@ -1,15 +1,16 @@
 .Typing>.btn-primary{
-position: relative;
-left: 40%;
-margin: 2%;
-}
-.Typing>a{
-    margin-left: 40%;
-    
+    position: relative;
+    left: 40%;
+    margin: 2%;
     }
+    .Typing>a{
+        margin-left: 40%;
+        
+        }
     #pratice{
         background-color: rgb(110, 50, 7);
     }
     #pratice:hover{
         background-color: rgb(73, 33, 5);
     }
+    

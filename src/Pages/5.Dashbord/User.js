@@ -5,6 +5,7 @@ import { useState } from "react";
 import usePng from '../../Images/usePng.png'
 import "./Style.css";
 import NavBar from "../1.Navbar/NavBar";
+import { Link } from "react-router-dom";
 
 
 function User() {
@@ -42,8 +43,30 @@ function User() {
       </div>
       
 
+      
+
      <name className='userName' >{user?.email}</name> 
-    <name className='userName'>{user?.displayName}</name>  
+    <name className='userName'>{user?.displayName}</name> 
+
+    <div className="container">
+      <div>
+      <Link to='/basicsOfComputer'>
+
+        <img src="" alt="Loading..."/>
+        Standard Course
+        </Link>
+
+      </div>
+      <div>
+        <Link to='/Payment'>
+      <img src="" alt="Loading..."/>
+      Premium Course
+
+      </Link>
+
+      </div>
+
+      </div> 
     </div>
   );
 }
