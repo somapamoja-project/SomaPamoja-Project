@@ -140,24 +140,29 @@ export function Information(){
 export function Explanation1(){
   return(
     <div className="explanation1">
-       <div>
       <h1>learn coding and basics of computer</h1>
-    </div>
-    <div>free<br/>
-    ksh 0.00
-    </div>
-    <button>start for free</button>
     
+    <div className="explanation0">
     <div>
-      premium<br/>
-      1000  ksh per monthly
+    free<br/>
+    ksh 0.00 
+    <button className="btn btn-primary">
+      start for free
+      </button>
     </div>
-    <button>
+    <div>
+    premium<br/>
+      1000  ksh per month
+      <button  className="btn btn-primary" >
       start learning
     </button>
-    <div>
+    </div>
+    
    
     </div>
+   
+   
+    
 
     </div>
   )

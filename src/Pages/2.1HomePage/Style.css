@@ -190,6 +190,29 @@
 .content1>img{
 margin-left:20%;
 width:80%
-
 }
+
+/* .btn btn-start{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+
+.explanation0{
+    padding:200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+   
+}
+.explanation0>div{
+    margin-right:50px;
+}
+
+
+    
+
 
