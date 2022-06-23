@@ -24,8 +24,8 @@ function Contact() {
           <option value="kalobeyei">Kaloboyei</option>
           <option value="kakuma-town">Kakuma Town</option>
         </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style={{ color: 'blue', lineHeight : 10, padding: 10 }}></textarea>
+        <label for="subject">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style={{ color: 'chocolate', lineHeight : 10, padding: 10 }}></textarea>
         <input type="submit" value="Submit"/>
         
       
