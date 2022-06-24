@@ -14,9 +14,9 @@ export default function Request() {
       setAge("You can not have this age");
     } else if (age.value <= 5) {
       setAge("You are so Young");
-    } else if (age.value > 5 && age.value < 18) {
+    } else if (age.value > 5 && age.value < 15) {
       setAge(<FreeCourses />);
-    } else if (age.value >= 18) {
+    } else if (age.value >= 15) {
       setAge(<SignUp />);
     } else setAge("");
   };
@@ -33,7 +33,8 @@ export default function Request() {
       />
       <button onClick={Redirect} className="btn btn-primary" id="btnGotoFree1">
         Submit
-      </button> <br/>
+      </button>{" "}
+      <br />
       <h2>{age}</h2>
     </div>
   );

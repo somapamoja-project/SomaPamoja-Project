@@ -17,4 +17,82 @@
     position:absolute;
     top: 55px;
     right: 35px;
+    
+
 }
+.paymentStripe{
+    width: 10%;
+    box-shadow: 5px 10px 8px 10px #888888;
+    padding: 2%;
+    border-radius: 25px;
+    margin: 5%;
+    margin-left: 10%;
+    
+}
+.allPayment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 110%;
+  
+}
+.Mpesa>img,.Stripe>img,.paypal>img{
+    width: 70%;
+}
+#payNowMpesa{
+    background-color: rgb(70, 167, 58);
+    border: none;
+}
+#paymentPage{
+    margin-bottom: 5%;
+}
+#FailCode{
+    position: relative;
+    bottom: 200px;
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#codeMpesa{
+    width: 30%;
+    margin: 2%;
+    margin-left: 0%;
+}
+#codeMpesa:hover{
+    border: solid green;
+    border-radius: 7px;
+}
+#codeVerify{
+    position: relative;
+    top: 0px;
+    right: 30%;
+    width: 20%;
+}
+.payment{
+    margin: 5%;
+    margin-left: 40%;
+}
+.payment>p{
+    font-size: 30px;
+}
+#payNowPaypal{
+    background-color: rgb(28,57,132);
+    margin: 5%;
+}
+#codeVerify1{
+    position: relative;
+    top: 0px;
+    right: 30%;
+    width: 20%;
+    background-color: rgb(22, 47, 109);
+    border: none;
+}
+#codepaypal{
+    width: 30%;
+    margin: 2%;
+    margin-left: 0%;
+}
+#codepaypal:hover{
+    border: solid rgb(22, 47, 109); 
+    border-radius: 7px;
+}
+

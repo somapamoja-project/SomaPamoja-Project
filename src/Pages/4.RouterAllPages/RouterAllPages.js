@@ -29,14 +29,22 @@ import CreateEmailing from "../2.2 Soma/Courses/CreateEmailing";
 import CreateEmail from "../2.2 Soma/Courses/Create your ancount/CreateEmail";
 import GoingOnlineSafely from "../2.2 Soma/Courses/GoingOnlineSafely";
 import SigningUp from "../2.5 SignUp$Login/SigningUp.js";
-import FormPage from '../2.5 SignUp$Login/FormPage'
-import User from '../5.Dashbord/User'
+import FormPage from "../2.5 SignUp$Login/FormPage";
+import User from "../5.Dashbord/User";
 import SigningIn from "../2.5 SignUp$Login/LogIn";
-import Payment from '../5.Dashbord/Payment'
-import ListOfCourses from '../2.2 Soma/PremiumCourse/ListOfCourses'
-import Practice from '../2.2 Soma/PremiumCourse/Practice/Practice'
-
-
+import Payment from "../5.Dashbord/Payment";
+import ListOfCourses from "../2.2 Soma/PremiumCourse/ListOfGrades";
+import Practice from "../2.2 Soma/PremiumCourse/Practice/Practice";
+import Grade1 from "../2.2 Soma/PremiumCourse/Grade/Grade1";
+import Grade2 from "../2.2 Soma/PremiumCourse/Grade/Grade2";
+import Grade3 from "../2.2 Soma/PremiumCourse/Grade/Grade3";
+import Grade4 from "../2.2 Soma/PremiumCourse/Grade/Grade4";
+import {
+  ThemeCourses,
+  Link1,
+} from "../2.2 Soma/PremiumCourse/ThemeOfCourses/ThemeCourse";
+import Mpesa from '../5.Dashbord/Payment/Mpesa'
+import PayPal from '../5.Dashbord/Payment/Paypal'
 
 export default function RouterAllPages() {
   return (
@@ -116,18 +124,66 @@ export default function RouterAllPages() {
         <Route path="/CreateEmail" element={<CreateEmail />} />
         <Route path="/GoingOnlineSafely" element={<GoingOnlineSafely />} />
         <Route path="/SigningUp" element={<SigningUp />} />
-        <Route path="/User" element={<User/>}/>
-        <Route path="/SigningIn" element={<SigningIn/>}/>
-        <Route path="/Payment" element={<Payment/>}/>
-        <Route path="/ListOfCourses" element={<ListOfCourses/>}/>
-        <Route path="/Practice" element={<Practice/>}/>
-      </Routes>
+        <Route path="/User" element={<User />} />
+        <Route path="/SigningIn" element={<SigningIn />} />
+        <Route path="/Payment" element={<Payment />} />
+        <Route path="/ListOfCourses" element={<ListOfCourses />} />
+        <Route path="/Practice" element={<Practice />} />
+        <Route path="/Grade1" element={<Grade1 />} />
+        <Route path="/Grade2" element={<Grade2/>}/>
+        <Route path="/Grade3" element={<Grade3/>}/>
+        <Route path="/Grade4" element={<Grade4/>}/>
+        <Route
+          path="/ThemeCourses"
+          element={
+            <ThemeCourses
+              header="Introdution to Blockly"
+              course1="Puzzle"
+              course2="Maze"
+            />
+          }
+        />
+
+        <Route
+          path="/Link1"
+          element={<Link1 APIBlockly='https://blockly.games/puzzle?lang=en' Blockly1='Puzzle' youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Puzzle"  />}
+        />
+        <Route
+          path="/Link2"
+          element={<Link1 APIBlockly='https://blockly.games/maze?lang=en' Blockly1='Maze' youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Maze" />}
+        />
+   
+      <Route
+          path="/Link3"
+          element={<Link1 APIBlockly='https://blockly.games/bird?lang=en' Blockly1='Bird' youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Bird" />}
+        />
+      <Route
+          path="/Link4"
+          element={<Link1 youtubelink="https://blockly.games/turtle?lang=en" header="Turtle" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Turtle" />}
+        />
+        <Route
+          path="/Link5"
+          element={<Link1 youtubelink="https://blockly.games/movie?lang=en" header="Movie" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Movie" />}
+        />
+        <Route
+          path="/Link6"
+          element={<Link1 youtubelink="https://blockly.games/music?lang=en" header="Music" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Music" />}
+        />
+        <Route
+          path="/Link7"
+          element={<Link1 youtubelink="https://blockly.games/pond-tutor?lang=en" header="Pond Tuto" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Pond Tuto" />}
+        />
+        <Route
+          path="/Link8"
+          element={<Link1 youtubelink="https://blockly.games/pond-duck?lang=en" header="Pond" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Pond" />}
+        />
+        <Route path="/Payment-via-Mpesa"  element={<Mpesa TillNumber='5562149'/>}/>
+        <Route path="/Payment-via-PayPal" element={<PayPal GmailPaypal='somapamojacompany@gmail.com'/>}/>
+           </Routes>
+
       
-     
 
       <FooterContainer />
-      
-     
     </BrowserRouter>
   );
 }

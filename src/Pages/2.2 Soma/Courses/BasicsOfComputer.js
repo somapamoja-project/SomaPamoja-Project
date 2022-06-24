@@ -28,7 +28,7 @@ export default function BasicsOfComputer() {
    
         <Link to="/historyofComputer" className='ListCourses'><li>History and Generations of Computer </li> <iframe width="760" height="415" src={LinkVideo1} title="YouTube video player" frameborder="0" ></iframe></Link>
         
-        <Link to="/PartiesOfComputer" className='ListCourses'><li>Parties of Computer </li><iframe width="760" height="415" src={LinkVideo2} title="YouTube video player" frameborder="0" ></iframe></Link>
+        <Link to="/PartyOfComputer" className='ListCourses'><li>Parties of Computer </li><iframe width="760" height="415" src={LinkVideo2} title="YouTube video player" frameborder="0" ></iframe></Link>
         <Link to="/ComputerVirusesAndSecurty" className='ListCourses'><li>Viruses And Security of Computer</li> <iframe width="760" height="415" src={LinkVideo3} title="YouTube video player" frameborder="0" ></iframe></Link>
         <Link to="/Difference-Between-Mac-Windows" className='ListCourses'><li>  The Difference between Windows And Macs </li> <iframe width="760" height="415" src={LinkVideo4} title="YouTube video player" frameborder="0" ></iframe></Link>
         <Link to="/Classification-Computers-Size" className='ListCourses'><li> Classification Of Computer According To Size  </li> <iframe width="760" height="415" src={LinkVideo5} title="YouTube video player" frameborder="0" ></iframe></Link>

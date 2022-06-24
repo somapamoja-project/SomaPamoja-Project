@@ -13,4 +13,108 @@
     #pratice:hover{
         background-color: rgb(73, 33, 5);
     }
+
+    .Grades{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5%;
+        margin-right: 10%;
+        
+    }
     
+    .Grades>.GradeImg>img{
+        width: 120%;
+    }
+    .Grades>.GradeImg{
+        align-items: center;
+    }
+    #gradeimg1:hover,#gradeimg2:hover,#gradeimg3:hover,#gradeimg4:hover{
+        background-color: rgb(194, 194, 194);
+        border-radius: 25px;
+
+    }
+    #gradeimg1:active, #gradeimg2:active, #gradeimg3:active, #gradeimg4:active{
+        background-color: rgb(255, 164, 78);
+        border-radius: 25px;
+    }
+    .headerPremium>h1{
+        margin-left: 15%;
+        font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    }
+    #btnSignup2{
+        margin: 5%;
+        margin-left: 25%;
+        width: 50%;
+background-color: rgb(126, 57, 8);
+border: none;
+
+}
+.QCF{
+    position: relative;
+    bottom: 300px;
+    left: 10%;
+}
+.containerFC>.QCF>p{
+    font-size: 30px;
+}
+.QCF>iframe{
+    position: relative;
+    bottom: 150px;
+    border-radius: 50px;
+    color: #683200;
+}
+
+
+@media only screen and (max-width: 800px) and (min-width:10px){
+    .containerFC{
+        box-shadow: 5px 10px 8px 10px #888888;
+        margin: 5%;
+        text-align: center;
+        padding: 2%;
+        padding-left:5%;
+        padding-bottom: 5%;
+    }
+    
+    .containerFC>.QCF>button{
+        position: relative;
+        width: 45%;
+        display: flex;
+        left: -50px;
+        color: #ffffff;
+    }
+    .containerFC>button:hover{
+        background-color: #683200;
+        color: white;
+    }
+    .containerFC>img{
+        position: relative;
+        top: 30px;
+        margin-left: 50%;
+        width: -20%;
+    }
+    
+    .QCF6{
+        position: relative;
+        top: 60%;
+    
+        left: 2%;
+    }
+    .containerFC>.QCF6>p{
+        font-size: 30px;
+    }
+    .QCF6>iframe{
+        
+        border-radius: 50px;
+        left: 2%;
+        color: #683200;
+    }
+}
+#btn-success{
+    position: relative;
+    top: 70px;
+    right: 300px;
+}
+

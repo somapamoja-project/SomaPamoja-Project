@@ -4,7 +4,9 @@ import googlemap from '../../Images/googlemap.png'; // gives image path
 
 function Contact() {
     return (
-        <div class="container">
+      
+        <div class="container51">
+          <div className="container">
     
     <h2>Contact Us</h2>
     <p className="comment">Swing by to introduce your kids into coding, or leave us a message:</p>
@@ -29,6 +31,7 @@ function Contact() {
         <input type="submit" value="Submit"/>
         
       
+</div>
 </div>
     );
 }
