@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SomaPamoja-Project/static/css/main.bf38345f.css",
-    "main.js": "/SomaPamoja-Project/static/js/main.338b712b.js",
+    "main.js": "/SomaPamoja-Project/static/js/main.eb039d7f.js",
     "static/js/787.ab750b28.chunk.js": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js",
     "static/media/Loting.png": "/SomaPamoja-Project/static/media/Loting.288b1d1e225ea32ceabb.png",
     "static/media/DessaiKibeho.png": "/SomaPamoja-Project/static/media/DessaiKibeho.7be97f55317e4378be2c.png",
@@ -50,11 +50,11 @@
     "static/media/cartoon.webp": "/SomaPamoja-Project/static/media/cartoon.64cb553c6bc92b579614.webp",
     "index.html": "/SomaPamoja-Project/index.html",
     "main.bf38345f.css.map": "/SomaPamoja-Project/static/css/main.bf38345f.css.map",
-    "main.338b712b.js.map": "/SomaPamoja-Project/static/js/main.338b712b.js.map",
+    "main.eb039d7f.js.map": "/SomaPamoja-Project/static/js/main.eb039d7f.js.map",
     "787.ab750b28.chunk.js.map": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf38345f.css",
-    "static/js/main.338b712b.js"
+    "static/js/main.eb039d7f.js"
   ]
 }
