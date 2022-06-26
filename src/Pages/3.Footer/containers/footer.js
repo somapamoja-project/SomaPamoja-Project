@@ -4,9 +4,16 @@ import { Link } from 'react-router-dom'
 import Icon from '../components/icons'
 import './style.css'
 import OfficalLogo from '../../../Images/My project (9).png'
+import { signOut } from 'firebase/auth'
+import { auth } from '../../../firebase/Firebase-config'
+
 
 
  export default function FooterContainer() {
+    const logeOut = () => {
+        signOut(auth);
+        
+      }
     return (
        
         <Footer  >
@@ -37,6 +44,7 @@ import OfficalLogo from '../../../Images/My project (9).png'
                     <Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>
                     <Footer.Link href="#"><Icon className="fab fa-youtube" />Youtube</Footer.Link>
+                    <button onClick={logeOut}> LogOut</button>
 
                 </Footer.Column>
             </Footer.Row>
