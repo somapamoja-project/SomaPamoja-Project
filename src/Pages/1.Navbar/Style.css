@@ -61,9 +61,7 @@ background-color: rgb(110, 54, 14);
 border: none;
 
 }
-#Logout{
-    display: none;
-}
+
 
 @media only screen and (max-width: 800px) and (min-width:10px){
     .listNav12{
@@ -76,4 +74,7 @@ border: none;
         display: flex;
         width: 200px;
     } 
+}
+#Logout{
+    display: none;
 }

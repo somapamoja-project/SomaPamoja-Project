@@ -2,74 +2,69 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import React, { useEffect } from "react";
 import { auth } from "../../firebase/Firebase-config";
 import { useState } from "react";
-import usePng from '../../Images/usePng.png'
+import usePng from "../../Images/usePng.png";
 import "./Style.css";
 import NavBar from "../1.Navbar/NavBar";
 import { Link } from "react-router-dom";
+import sponsorImg from "../../Images/spocourses1.JPG";
+import payableImg from "../../Images/payblecourses1.JPG";
+import freeCourseImg from "../../Images/freecourses1.JPG";
+
+export function User() {
+  const[data,setData]=useState()
 
 
-function User() {
-  
-  const [user, setUser] = useState({});
-  var UserEmail = document.getElementById("userEmail");
-  
 
   useEffect(() => {
     try {
       onAuthStateChanged(auth, (currentUser) => {
         if (currentUser) {
-          document.getElementById("Get").style.display = "none";
-          document.getElementById('Logout').style.display='flex';
-          document.getElementById("loginVannish").style.display='none'
-
-          setUser(currentUser);
+          setData(currentUser)
         } else {
+
           console.log("no user");
         }
       });
     } catch (err) {
       console.log(err.code);
-      
     }
   }, []);
+
+
   
-  if (user.displayName === null) {
-    console.log("form");
-  }
-  console.log(user?.photoURL);
+ 
   return (
-    <div className="UseName">
-      <div className="imageUser">
-      <img src='https://www.w3schools.com/images/w3schools_green.jpg'  alt='No Image'/>
-      </div>
+    <div className="UseName" id='imageIcon'>
+   
       
-
       
-
-     <name className='userName' >{user?.email}</name> 
-    <name className='userName'>{user?.displayName}</name> 
-
-    <div className="container">
-      <div>
-      <Link to='/basicsOfComputer'>
-
-        <img src="" alt="Loading..."/>
-        Standard Course
-        </Link>
-
-      </div>
-      <div>
-        <Link to='/Payment'>
-      <img src="" alt="Loading..."/>
-      Premium Course
-
-      </Link>
-
-      </div>
-
-      </div> 
+      <OfferPrograms linkto1="/Payment" linkto2="/Payment" />
+      
     </div>
   );
 }
-
-export default User;
+export function OfferPrograms({ linkto1, linkto2 }) {
+  return (
+    <div className=" container">
+      <h2 id="programs">Our Programs </h2>
+      <div className="OfferPrograms">
+        <div>
+          <Link to="/FreeCourses" className="img">
+            <img src={freeCourseImg} alt="loadingg..." />
+          </Link>
+        </div>
+        <div>
+          <Link to={linkto1} className="img">
+            {" "}
+            <img src={payableImg} alt="loadingg..." />
+          </Link>
+        </div>
+        <div>
+          <Link to={linkto2} className="img">
+            <img src={sponsorImg} alt="loadingg..." />
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}

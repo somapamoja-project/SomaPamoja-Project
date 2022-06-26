@@ -7,6 +7,7 @@ import imageD from"../../../Images/owlteacher.png"
 function ListeOfCourses() {
   return (
     <div className='containerC'>
+      <h1>Free Courses</h1>
       
       <ol>
       <img src={imageD} alt='loading...' />

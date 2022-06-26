@@ -1,0 +1,10 @@
+form>input{
+    width: 30%;
+}
+form >button{
+    width: 20%;
+}
+form >#Reason,form>#Interest{
+    width: 50%;
+    height: 150px;
+}

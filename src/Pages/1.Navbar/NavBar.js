@@ -11,18 +11,10 @@ import User from "../5.Dashbord/User";
 
 
 
-export default function NavBar() {
+export default function NavBar({HomeName,logeOut}) {
 
   
-  const logeOut = () => {
-    signOut(auth);
-    document.getElementById("Get").style.display = "flex";
-    setLogin()
-    document.getElementById("loginVannish").style.display='flex'
-  };
-  function setLogin(){
-    document.getElementById('Logout').style.display='none'
-  }
+
   const navigate = useNavigate();
 
   return (
@@ -40,7 +32,7 @@ export default function NavBar() {
         <div className="listNav2">
           <li className="listNav3">
             <Link to="/SomaPamoja-Project" id="navName1">
-              Home{" "}
+              {HomeName}
             </Link>
           </li>
           <li className="listNav3">

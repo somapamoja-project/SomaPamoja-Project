@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../2.1HomePage/Home";
 import WelcomePage from "../2.2 Soma/WelcomePage";
@@ -30,7 +30,7 @@ import CreateEmail from "../2.2 Soma/Courses/Create your ancount/CreateEmail";
 import GoingOnlineSafely from "../2.2 Soma/Courses/GoingOnlineSafely";
 import SigningUp from "../2.5 SignUp$Login/SigningUp.js";
 import FormPage from "../2.5 SignUp$Login/FormPage";
-import User from "../5.Dashbord/User";
+import {User} from "../5.Dashbord/User";
 import SigningIn from "../2.5 SignUp$Login/LogIn";
 import Payment from "../5.Dashbord/Payment";
 import ListOfCourses from "../2.2 Soma/PremiumCourse/ListOfGrades";
@@ -45,11 +45,119 @@ import {
 } from "../2.2 Soma/PremiumCourse/ThemeOfCourses/ThemeCourse";
 import Mpesa from '../5.Dashbord/Payment/Mpesa'
 import PayPal from '../5.Dashbord/Payment/Paypal'
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { auth, colRef } from "../../firebase/Firebase-config";
+import '../5.Dashbord/Style.css'
+import noImage from '../../Images/noImage.png'
+import WaitingList from "../6.SponsorPlateform/WaitingList";
+import FormForWaitingList from "../6.SponsorPlateform/FormForWaitingList";
+import { getDocs } from "firebase/firestore";
+import StudentProp from '../6.SponsorPlateform/StudentsList/StudentProp'
 
 export default function RouterAllPages() {
+  const [user, setUser] = useState();
+  const [data1,setData1] =useState({})
+
+
+
+//sponsor code
+
+const [List,setList]=useState([])
+const oneData=[]
+;
+async function display(){
+  await getDocs(colRef).then((allDocs) => {
+    var studentsList = []
+
+  allDocs.docs.forEach((doc) => {
+    studentsList.push({ ...doc.data(), id: doc.id });
+    setList(studentsList)
+  })
+  
+  
+
+})
+.catch((e)=>{
+  console.log(e.message)
+})
+
+};display()
+
+
+  //Login Statement
+  
+  useEffect(() => {
+    const logeOut = () => {
+      signOut(auth);
+      document.getElementById("Get").style.display = "flex";
+      setLogin()
+      document.getElementById("loginVannish").style.display='flex'
+    }
+    function setLogin(){
+      document.getElementById('Logout').style.display='none'
+    }
+    try {
+      onAuthStateChanged(auth, (currentUser) => {
+        if (currentUser) {
+          setUser(<NavBar logeOut={logeOut} HomeName='Dashboard' />)
+          setData1(currentUser)
+          function Display(){
+          document.getElementById("Get").style.display = "none";
+          document.getElementById("Logout").style.display = "flex";
+          document.getElementById("loginVannish").style.display = "none";
+          document.getElementById('imageIcon').style.display='flex'
+          document.getElementById('imgiconLogo').style.display='flex'
+        } Display()
+
+       ;
+        } else {
+          console.log(currentUser)
+          setUser(<NavBar HomeName='Home' />)
+          logeOut()
+        
+         function Display(){ 
+          document.getElementById("Get").style.display = "flex";
+          document.getElementById("Logout").style.display = "none";
+          document.getElementById("loginVannish").style.display = "flex"
+          document.getElementById('imageIcon').style.display='none'
+        
+        }; Display()
+      
+         
+        }
+      });
+    } catch (err) {
+      alert('check Your Internet')
+      console.log(err.code);
+    }
+
+ 
+ 
+  List.map(
+    (e)=>{
+      oneData.push(e.FullNames,e.Reason)
+    }
+
+  )
+  console.log(oneData.FullNames)
+
+  },[])
+
+  
   return (
     <BrowserRouter>
-      <NavBar />
+     {user}
+    <div className="UseName" id='imageIcon'>
+
+      <div className="imageUser">
+        <img type='icon' id="imgiconLogo"
+          src={data1?.photoURL}
+          alt="noImage"
+        />
+      </div>
+      <h2>{data1?.displayName}{data1?.email}</h2></div>
+   
+   
       <Routes>
         <Route
           path="*"
@@ -179,6 +287,9 @@ export default function RouterAllPages() {
         />
         <Route path="/Payment-via-Mpesa"  element={<Mpesa TillNumber='5562149'/>}/>
         <Route path="/Payment-via-PayPal" element={<PayPal GmailPaypal='somapamojacompany@gmail.com'/>}/>
+        <Route path="/Waiting-List" element={<WaitingList/>}/>
+        <Route path="/Form-For-Waiting-List" element={<FormForWaitingList/>}/>
+        <Route path={`${oneData.FullNames}`} element={<FormForWaitingList/>} />
            </Routes>
 
       
