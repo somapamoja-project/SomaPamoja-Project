@@ -3,6 +3,7 @@ import React from "react";
 import { Header, Explanation,VideoDescription,Courses, Courses1,  imageSlide,Information } from "./HomeComponents";
 import { Link } from "react-router-dom";
 import {OfferPrograms} from '../5.Dashbord/User'
+import ListeOfCourses from '../2.2 Soma/Courses/ListeOfCourses'
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
       <VideoDescription/>
       <div className="Ourprogram">
       <OfferPrograms linkto1='/request' linkto2='/request'  />
+      
       </div>
       <div className="CourseExplanaition">
+      <ListeOfCourses/>
       <Courses/>
       </div>
       <Courses1/>

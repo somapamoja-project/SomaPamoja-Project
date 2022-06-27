@@ -289,7 +289,7 @@ async function display(){
         <Route path="/Payment-via-PayPal" element={<PayPal GmailPaypal='somapamojacompany@gmail.com'/>}/>
         <Route path="/Waiting-List" element={<WaitingList/>}/>
         <Route path="/Form-For-Waiting-List" element={<FormForWaitingList/>}/>
-        <Route path={`${oneData.FullNames}`} element={<FormForWaitingList/>} />
+       
            </Routes>
 
       

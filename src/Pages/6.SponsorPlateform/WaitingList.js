@@ -46,6 +46,7 @@ export default function WaitingList() {
             
 
              <>
+             {oneData[0]}<br/>{oneData[1]}
              </>
             )
   }
