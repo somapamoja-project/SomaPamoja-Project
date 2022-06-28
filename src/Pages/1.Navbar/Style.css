@@ -62,8 +62,96 @@ border: none;
 
 }
 
-
 @media only screen and (max-width: 800px) and (min-width:10px){
+        *{
+            max-width: 100%;
+        }
+         
+          .Navbar{
+            
+            width: 120%;
+            margin-right: 0%;
+            
+            
+        }
+        .listNav{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(240, 240, 240);
+          
+        }
+        .listNav1>a>img{
+            
+            bottom: 0%;
+            left: -20%;
+        
+        
+        }
+        .listNav>li,.listNav2>li{
+            list-style: none;
+            
+        }
+        .listNav2{
+           
+            right: 42%;
+            display: flex;
+            flex-direction: row;
+        }
+        .listNav2>li{
+            margin-right: 3%;
+            font-size: 12px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        
+        }
+        .listNav2{
+           
+            top: 0%;
+            margin-right: 0%;
+        }
+        
+        .listNav{
+            height: 80px;
+        }
+        
+        .Navbar{
+            position: relative;
+            left: 0%;
+        }
+        .listNav1>.listNav11>img{
+            position: relative;
+            top: 10%;
+            width: 0%;
+        }
+        
+        .listNav1>.listNav12>img{
+            display:flex;
+            position: relative;
+            top: -9%;
+            right: 200px;
+            width: 300%;
+        }
+    .Navbar>.listNav>.listNav1{
+        width: 200%;
+        padding-right: 20%;
+    }
+    .container>.logo4{
+        position: relative;
+        margin-left: 28%;
+    }
+    
+    .container>.officialLogo{
+        position: relative;
+        margin-left: 26%;
+    }
+    
+    .container1{
+        position: relative;
+        margin-top:37%;
+        margin-left: 28%;
+    }
+    
+    
+    
     .listNav12{
         display: flex;
         width: 150px;
@@ -74,7 +162,8 @@ border: none;
         display: flex;
         width: 200px;
     } 
-}
+
 #Logout{
     display: none;
+}
 }
