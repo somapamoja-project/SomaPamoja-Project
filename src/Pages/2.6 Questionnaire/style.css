@@ -57,8 +57,6 @@ margin-bottom: 10%;
 }
 
 
-}
-
 @media only screen and (max-width: 800px) and (min-width:10px){
     #Display10sec{
         position: absolute;
