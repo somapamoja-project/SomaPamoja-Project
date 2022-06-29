@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
     signInWithEmailAndPassword,
@@ -14,7 +14,7 @@ import "./style.css";
 import SignUp from "../../Images/SignUp.png";
 import { useState } from "react";
 
-export default function SigningIn() {
+export default React.memo( function  SigningIn() {
   const [userDetails, setuserDetails] = useState({});
   const navigation = useNavigate();
 
@@ -58,6 +58,7 @@ export default function SigningIn() {
       console.log(err.message);
     }
   }
+  
 
   return (
     <div className="container">
@@ -80,4 +81,4 @@ export default function SigningIn() {
       <Link to='/SigningUp' className="btn btn-primary" id="createA">Create an Account </Link>
     </div>
   );
-}
+})

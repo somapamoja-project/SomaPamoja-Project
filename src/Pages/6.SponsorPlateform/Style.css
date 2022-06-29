@@ -30,3 +30,39 @@ border-right: solid black 2px ;
 .table, th, td {
     border:1px solid black;
   }
+.container>.headerForm{
+    position: relative;
+   font-size: 50px;
+   margin: 5%;
+}
+.Notification{
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    border: solid black;
+    width: 30%;
+    height: 800px;
+    padding: 2%;
+   text-align: center;
+    background-color:white;
+    border-radius: 50px;
+   
+
+
+}
+.Notification>img{
+    width: 100%;
+}
+.Notification>h1{
+    font-size: 30px;
+    font-weight: bold;
+
+   
+}
+.Notification>button{
+    margin: 10%;
+    border-radius: 25px;
+    background-color: rgb(88, 43, 11);
+}
+

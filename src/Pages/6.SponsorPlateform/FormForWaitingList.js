@@ -3,9 +3,12 @@ import React from "react";
 import { colRef } from "../../firebase/Firebase-config";
 import { addDoc } from "firebase/firestore";
 import "./Style.css";
+import correct from '../../Images/FreeCourses/correct85.gif'
+import { useNavigate } from "react-router-dom";
 
 function FormForWaitingList() {
-  function Display(e) {
+  const navigation2=useNavigate()
+  function Submit(e) {
     e.preventDefault();
     let FullName = document.getElementById("fullNames");
     let Agesponsor = document.getElementById("agesponsor");
@@ -14,6 +17,11 @@ function FormForWaitingList() {
     let Reason = document.getElementById("Reason");
     let Interest = document.getElementById("Interest");
     let Gender=document.getElementById('Gender')
+
+    document.getElementById('Notification').style.display='inline'
+        document.getElementById('form1').style.filter='blur(8px)'
+
+
     addDoc(colRef, {
       FullNames: FullName.value,
       Age: Agesponsor.value,
@@ -25,17 +33,22 @@ function FormForWaitingList() {
     })
     .then(()=>{
         document.getElementById('form1').reset()
+        
     })
     .catch((err)=>{
+    
+        
         console.log(err.message)
     })
   }
 
   return (
-    <div>
-      {" "}
-      <h1>Form For Waiting List to be sponsored</h1>
-      <form action="" Id='form1' onSubmit={Display} className="container">
+    <div className="container">
+
+      
+      
+      <form action="" Id='form1' onSubmit={Submit} className="container">
+      <h1 className="headerForm">Form For Waiting List to be sponsored</h1>
         <label for="fname">Full Names:</label>
         <br />
         <input
@@ -80,7 +93,7 @@ function FormForWaitingList() {
         />
         <br />
         <br />
-        <label for="Status">Status(refugee or host community):</label>
+        <label for="Status">Status(Refugee or Host Community):</label>
         <br />
         <input
           type="text"
@@ -115,10 +128,18 @@ function FormForWaitingList() {
           required
         ></textarea>
         <br />
-        <button type="submit" value="Submit" onClick={Display}>
+        
+        <button type="submit" className="btn btn-primary" value="Submit" onClick={Submit}>
           Submit
-        </button>
+        </button><br/>
       </form>
+      <div className="Notification" id="Notification">
+          <img src={correct} alt='loading...' />
+          <h1>Your submission  is <br/>  under process.<br/> If you are sponsored ,<br/> you will see your name on the precedent List</h1>
+          <button className="btn btn-secondary" onClick={()=>{ return navigation2('/FreeCourses')}} >Go To free Courses</button>
+          <button className="btn btn-secondary" onClick={()=>{ return navigation2('/List-Of-Sponsored-Students')}} >Check The List</button>
+        </div>
+        
     </div>
   );
 }

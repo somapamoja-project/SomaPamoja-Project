@@ -11,7 +11,7 @@ export default React.memo( function SponsoredStudents() {
   const oneData=[]
   const [List,setList]=useState([]) 
    
-  async function FetchDoc(){
+   async function FetchDoc(){
    
   try{  await getDocs(colRef).then((allDocs) => {
     var studentsList = []
@@ -59,24 +59,25 @@ useEffect(()=>{
 
 
   return (
-    <div>
+    <div >
       
        <h1>List of Sponsored Students</h1>
        <table className='table'>
   <tr>
     <th>Full Names </th>
+    <th>Age</th>
     <th>Gender</th>
-    <th>Pay for him or her</th>
+   
   </tr>
+
+    {List.map((e)=>{ return(<tr><td>{e.FullNames}</td><td>{e.Age}</td><td>{e.Gender}</td> </tr>)})}
+    
+    
+ 
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+   
+  
+   
   </tr>
 </table>
     

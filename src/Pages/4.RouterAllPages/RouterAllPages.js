@@ -55,9 +55,11 @@ import { getDocs } from "firebase/firestore";
 import StudentProp from '../6.SponsorPlateform/StudentsList/StudentProp'
 import WelcomeToSponsorPlatform from '../6.SponsorPlateform/WelcomeToSponsorPlatform'
 import SponsoredStudents from "../6.SponsorPlateform/StudentsList/SponsoredStudents";
+import ListOfSponsoredStudents from "../6.SponsorPlateform/StudentsList/ListOfSponsoredStudents.js";
 export default function  RouterAllPages() {
   const [user, setUser] = useState();
   const [data1,setData1] =useState({})
+
 
 
 
@@ -67,7 +69,7 @@ const [List,setList]=useState([])
 const oneData=[]
 ;
 
-async function display(){
+ React.memo(async function display(){
   await getDocs(colRef).then((allDocs) => {
     var studentsList = []
 
@@ -83,7 +85,7 @@ async function display(){
   console.log(e.message)
 })
 
-};display()
+})
 
 
   //Login Statement
@@ -293,6 +295,10 @@ async function display(){
         <Route path="/Form-For-Waiting-List" element={<FormForWaitingList/>}/>
         <Route path="/Welcome-To-Sponsor-Platform" element={<WelcomeToSponsorPlatform/>}/>
         <Route path="/Sponsored-Students" element={<SponsoredStudents/>}/>
+        <Route path="/List-Of-Sponsored-Students" element={< ListOfSponsoredStudents/>}/>
+     
+        
+       
        
            </Routes>
 
