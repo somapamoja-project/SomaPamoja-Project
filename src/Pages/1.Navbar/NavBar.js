@@ -64,7 +64,7 @@ export default function NavBar({HomeName,logeOut}) {
           
           <li className="listNav3">
             <Link to="/request" id="navName4" >
-             <button class="btn btn-primary" id="Get"> Get Started</button>
+             <button className="btn btn-primary" id="Get"> Get Started</button>
             </Link>
           </li>
         </div>

@@ -8,3 +8,25 @@ form >#Reason,form>#Interest{
     width: 50%;
     height: 150px;
 }
+.waitingList>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly,start;
+    width: 20%;
+    height: 50px;
+}
+.waitingList>li{
+    border: solid black;
+    height: 10px;
+}
+.waitingList>div{
+    border: solid black;
+}
+.waitingList>div>p{
+border-right: solid black 2px ;
+
+}
+
+.table, th, td {
+    border:1px solid black;
+  }

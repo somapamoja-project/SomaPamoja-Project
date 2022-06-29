@@ -13,13 +13,15 @@ function FormForWaitingList() {
     let status = document.getElementById("Status");
     let Reason = document.getElementById("Reason");
     let Interest = document.getElementById("Interest");
+    let Gender=document.getElementById('Gender')
     addDoc(colRef, {
       FullNames: FullName.value,
       Age: Agesponsor.value,
       Nationality:Nationality.value,
       Status:status.value,
       Reason:Reason.value,
-      Interest:Interest.value
+      Interest:Interest.value,
+      Gender:Gender.value
     })
     .then(()=>{
         document.getElementById('form1').reset()
@@ -43,6 +45,16 @@ function FormForWaitingList() {
           placeholder="Full Names"
           required
         />
+        <br/>
+        <br/>
+        <div>
+        <label for="Your Gender">Choose your gender:</label>
+  <select name="Gender" id="Gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select>
+
+        </div>
         <br />
         <br />
         <label for="Age">Age</label>

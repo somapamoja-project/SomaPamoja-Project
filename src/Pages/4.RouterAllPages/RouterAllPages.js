@@ -53,8 +53,9 @@ import WaitingList from "../6.SponsorPlateform/WaitingList";
 import FormForWaitingList from "../6.SponsorPlateform/FormForWaitingList";
 import { getDocs } from "firebase/firestore";
 import StudentProp from '../6.SponsorPlateform/StudentsList/StudentProp'
-
-export default function RouterAllPages() {
+import WelcomeToSponsorPlatform from '../6.SponsorPlateform/WelcomeToSponsorPlatform'
+import SponsoredStudents from "../6.SponsorPlateform/StudentsList/SponsoredStudents";
+export default function  RouterAllPages() {
   const [user, setUser] = useState();
   const [data1,setData1] =useState({})
 
@@ -65,6 +66,7 @@ export default function RouterAllPages() {
 const [List,setList]=useState([])
 const oneData=[]
 ;
+
 async function display(){
   await getDocs(colRef).then((allDocs) => {
     var studentsList = []
@@ -89,12 +91,12 @@ async function display(){
   useEffect(() => {
     const logeOut = () => {
       signOut(auth);
-      document.getElementById("Get").style.display = "flex";
+      document.getElementById("Get").Style.Display = "flex";
       setLogin()
-      document.getElementById("loginVannish").style.display='flex'
+      document.getElementById("loginVannish").Style.Display='flex'
     }
     function setLogin(){
-      document.getElementById('Logout').style.display='none'
+      document.getElementById('Logout').Style.Display='none'
     }
     try {
       onAuthStateChanged(auth, (currentUser) => {
@@ -289,6 +291,8 @@ async function display(){
         <Route path="/Payment-via-PayPal" element={<PayPal GmailPaypal='somapamojacompany@gmail.com'/>}/>
         <Route path="/Waiting-List" element={<WaitingList/>}/>
         <Route path="/Form-For-Waiting-List" element={<FormForWaitingList/>}/>
+        <Route path="/Welcome-To-Sponsor-Platform" element={<WelcomeToSponsorPlatform/>}/>
+        <Route path="/Sponsored-Students" element={<SponsoredStudents/>}/>
        
            </Routes>
 

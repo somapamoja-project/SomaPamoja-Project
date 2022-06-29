@@ -12,7 +12,7 @@ export default function Home() {
       <Explanation />
       <VideoDescription/>
       <div className="Ourprogram">
-      <OfferPrograms linkto1='/request' linkto2='/request'  />
+      <OfferPrograms linkto1='/request' linkto2='/Welcome-To-Sponsor-Platform'  />
       
       </div>
       <div className="CourseExplanaition">

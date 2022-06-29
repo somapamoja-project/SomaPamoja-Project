@@ -38,7 +38,7 @@ export function User() {
    
       
       
-      <OfferPrograms linkto1="/Payment" linkto2="/Payment" />
+      <OfferPrograms linkto1="/Payment" linkto2="/Welcome-To-Sponsor-Platform" />
       
     </div>
   );

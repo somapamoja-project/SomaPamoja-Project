@@ -70,7 +70,7 @@ export default function SigningIn() {
       <div className="container4">
         <input id="Password" type="password" placeholder="Password" />
       </div>
-      <button class="btn btn-primary" id="submitEmail" onClick={Submit}>
+      <button className="btn btn-primary" id="submitEmail" onClick={Submit}>
         Submit
       </button>
       <button onClick={SignINwithGoogle} id="btnSignUp">
