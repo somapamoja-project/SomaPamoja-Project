@@ -24,7 +24,7 @@ export default function WelcomePage() {
         <Link to='/List-Of-Sponsored-Students' className='image1'> <img src={photo1} alt='loading...'/><p className='options'> I am student Who needed to be sponsored </p> </Link>
         </li>
         <li>
-        <Link to='/SigningUp' className='image2'><img src={photo2} alt='loading...'/> <p className='options'> I am a sponsor</p></Link>
+        <Link to='/Donor-Pages-Question' className='image2'><img src={photo2} alt='loading...'/> <p className='options'> I am a sponsor</p></Link>
 
         </li>
         </div>
