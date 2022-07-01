@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SomaPamoja-Project/static/css/main.3f537c87.css",
-    "main.js": "/SomaPamoja-Project/static/js/main.f0885f02.js",
+    "main.css": "/SomaPamoja-Project/static/css/main.8d33ab1b.css",
+    "main.js": "/SomaPamoja-Project/static/js/main.a9d4ee56.js",
     "static/js/787.ab750b28.chunk.js": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js",
     "static/media/Loting.png": "/SomaPamoja-Project/static/media/Loting.288b1d1e225ea32ceabb.png",
     "static/media/sponsor5.jpg": "/SomaPamoja-Project/static/media/sponsor5.7e2f3df54445592cdf13.jpg",
@@ -13,16 +13,20 @@
     "static/media/Teacher.jpg": "/SomaPamoja-Project/static/media/Teacher.8bfb77df0547decbf122.jpg",
     "static/media/sponsorChildren.png": "/SomaPamoja-Project/static/media/sponsorChildren.302579694bad2bf0851a.png",
     "static/media/My project (9).png": "/SomaPamoja-Project/static/media/My project (9).1ffc033fda61e9eb9138.png",
+    "static/media/ExpoQR.jpg": "/SomaPamoja-Project/static/media/ExpoQR.2b84fcb5aeacc9adec96.jpg",
     "static/media/Grade41.png": "/SomaPamoja-Project/static/media/Grade41.34edb03f17c600d2b5a4.png",
     "static/media/eplainOwl.gif": "/SomaPamoja-Project/static/media/eplainOwl.8917c027e72bbeed366f.gif",
     "static/media/owl-attack.gif": "/SomaPamoja-Project/static/media/owl-attack.16f5f1fab26dff8f66fa.gif",
     "static/media/Grade2.png": "/SomaPamoja-Project/static/media/Grade2.d3a7f889f4d3325f2c62.png",
+    "static/media/coming5252.gif": "/SomaPamoja-Project/static/media/coming5252.089ce3baad67176fa7b8.gif",
     "static/media/Grade1.png": "/SomaPamoja-Project/static/media/Grade1.b360ccd6847050469bb8.png",
+    "static/media/Application1.jpg": "/SomaPamoja-Project/static/media/Application1.c07fad44dcccf1253273.jpg",
     "static/media/owlteacher.png": "/SomaPamoja-Project/static/media/owlteacher.a09219daa2ad2311d987.png",
     "static/media/Grade3.png": "/SomaPamoja-Project/static/media/Grade3.1770226281b5de6e61ef.png",
     "static/media/lap1.png": "/SomaPamoja-Project/static/media/lap1.02817e632280b1ccfc75.png",
     "static/media/loty.png": "/SomaPamoja-Project/static/media/loty.d6115c7ee4822a6a47f8.png",
     "static/media/kibeho.png": "/SomaPamoja-Project/static/media/kibeho.49eec70a1464e7df06fe.png",
+    "static/media/Ussd.jpg": "/SomaPamoja-Project/static/media/Ussd.708585e27ac72c67533f.jpg",
     "static/media/Gmail.gif": "/SomaPamoja-Project/static/media/Gmail.a03f3fefcf5d49f6a01a.gif",
     "static/media/class2.png": "/SomaPamoja-Project/static/media/class2.b23903da54a7b87606f6.png",
     "static/media/class3.png": "/SomaPamoja-Project/static/media/class3.b1dea53909c5a3c8a782.png",
@@ -57,12 +61,12 @@
     "static/media/Teacher.PNG": "/SomaPamoja-Project/static/media/Teacher.4f32ef4c4adc275171b4.PNG",
     "static/media/cartoon.webp": "/SomaPamoja-Project/static/media/cartoon.64cb553c6bc92b579614.webp",
     "index.html": "/SomaPamoja-Project/index.html",
-    "main.3f537c87.css.map": "/SomaPamoja-Project/static/css/main.3f537c87.css.map",
-    "main.f0885f02.js.map": "/SomaPamoja-Project/static/js/main.f0885f02.js.map",
+    "main.8d33ab1b.css.map": "/SomaPamoja-Project/static/css/main.8d33ab1b.css.map",
+    "main.a9d4ee56.js.map": "/SomaPamoja-Project/static/js/main.a9d4ee56.js.map",
     "787.ab750b28.chunk.js.map": "/SomaPamoja-Project/static/js/787.ab750b28.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f537c87.css",
-    "static/js/main.f0885f02.js"
+    "static/css/main.8d33ab1b.css",
+    "static/js/main.a9d4ee56.js"
   ]
 }
