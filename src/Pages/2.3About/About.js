@@ -53,18 +53,18 @@ function About() {
       </div>
 
       
-  {/* {/* <div class="column">
+  <div class="column">
     <div class="card">
     <img src={elie} className="elie" alt="Nature" width='100%' height='200px' /> 
       <div class="drum">
-        <h5>Elie Bavon</h5>
+        <h5>Elie Migisha Bavon</h5>
         <p class="title">Technology officer</p>
         <p>His a very experience in Program cordination.</p>
-        <p>elie137@gmail.com</p>
+        <p>eliemigisha5@gmail.com</p>
         <p><button class="button">Contact</button></p>
-      
       </div>
-      </div> */}
+      </div>
+      </div> 
 
      
   {/* <div class="column">
