@@ -11,7 +11,7 @@ import User from "../5.Dashbord/User";
 
 
 
-export default function NavBar({HomeName,logeOut}) {
+export default function NavBar({HomeName,logeOut,LinkHomeorDashboard}) {
 
   
 
@@ -31,7 +31,7 @@ export default function NavBar({HomeName,logeOut}) {
 
         <div className="listNav2">
           <li className="listNav3">
-            <Link to="/SomaPamoja-Project" id="navName1">
+            <Link to={LinkHomeorDashboard} id="navName1">
               {HomeName}
             </Link>
           </li>
@@ -40,6 +40,7 @@ export default function NavBar({HomeName,logeOut}) {
               Soma
             </Link>
           </li>
+         
           <li className="listNav3">
             <Link to="/about" id="navName3">
               About
@@ -48,6 +49,11 @@ export default function NavBar({HomeName,logeOut}) {
           <li className="listNav3">
             <Link to="/Contact" id="navName4">
               Contact
+            </Link>
+          </li>
+          <li className="listNav3">
+            <Link to="/Gaming-Space" id="navName2">
+              Gaming
             </Link>
           </li>
           

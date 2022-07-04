@@ -30,7 +30,7 @@ import CreateEmail from "../2.2 Soma/Courses/Create your ancount/CreateEmail";
 import GoingOnlineSafely from "../2.2 Soma/Courses/GoingOnlineSafely";
 import SigningUp from "../2.5 SignUp$Login/SigningUp.js";
 import FormPage from "../2.5 SignUp$Login/FormPage";
-import {User} from "../5.Dashbord/User";
+import { User } from "../5.Dashbord/User";
 import SigningIn from "../2.5 SignUp$Login/LogIn";
 import Payment from "../5.Dashbord/Payment";
 import ListOfCourses from "../2.2 Soma/PremiumCourse/ListOfGrades";
@@ -43,125 +43,117 @@ import {
   ThemeCourses,
   Link1,
 } from "../2.2 Soma/PremiumCourse/ThemeOfCourses/ThemeCourse";
-import Mpesa from '../5.Dashbord/Payment/Mpesa'
-import PayPal from '../5.Dashbord/Payment/Paypal'
+import Mpesa from "../5.Dashbord/Payment/Mpesa";
+import PayPal from "../5.Dashbord/Payment/Paypal";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth, colRef } from "../../firebase/Firebase-config";
-import '../5.Dashbord/Style.css'
-import noImage from '../../Images/noImage.png'
+import "../5.Dashbord/Style.css";
+import noImage from "../../Images/noImage.png";
 import WaitingList from "../6.SponsorPlateform/WaitingList";
 import FormForWaitingList from "../6.SponsorPlateform/FormForWaitingList";
 import { getDocs } from "firebase/firestore";
-import StudentProp from '../6.SponsorPlateform/StudentsList/StudentProp'
-import WelcomeToSponsorPlatform from '../6.SponsorPlateform/WelcomeToSponsorPlatform'
+import StudentProp from "../6.SponsorPlateform/StudentsList/StudentProp";
+import WelcomeToSponsorPlatform from "../6.SponsorPlateform/WelcomeToSponsorPlatform";
 import SponsoredStudents from "../6.SponsorPlateform/StudentsList/SponsoredStudents";
 import ListOfSponsoredStudents from "../6.SponsorPlateform/StudentsList/ListOfSponsoredStudents.js";
-export default function  RouterAllPages() {
+import DonorPagesQ from "../6.SponsorPlateform/Donors/DonorPages";
+import { Expo, More } from "../2.1HomePage/HomeComponents";
+import VolunteerTeachers from "../6.SponsorPlateform/Donors/VolunteerTeachers";
+import PagePastingMeeting from "../6.SponsorPlateform/Donors/PagePastingMeeting";
+import CrossTheRoad from "../Gaming/CrossTheRoad";
+export default function RouterAllPages() {
   const [user, setUser] = useState();
-  const [data1,setData1] =useState({})
+  const [data1, setData1] = useState({});
 
+  //sponsor code
 
+  const [List, setList] = useState([]);
+  const oneData = [];
+  React.memo(async function display() {
+    await getDocs(colRef)
+      .then((allDocs) => {
+        var studentsList = [];
 
+        allDocs.docs.forEach((doc) => {
+          studentsList.push({ ...doc.data(), id: doc.id });
+          setList(studentsList);
+        });
+      })
+      .catch((e) => {
+        console.log(e.message);
+      });
+  });
 
-//sponsor code
-
-const [List,setList]=useState([])
-const oneData=[]
-;
-
- React.memo(async function display(){
-  await getDocs(colRef).then((allDocs) => {
-    var studentsList = []
-
-  allDocs.docs.forEach((doc) => {
-    studentsList.push({ ...doc.data(), id: doc.id });
-    setList(studentsList)
-  })
   
-  
 
-})
-.catch((e)=>{
-  console.log(e.message)
-})
+  //Login and Logout Statement
+  const logeOut = () => {
+    signOut(auth);
+    document.getElementById("Get").style.display = "flex";
+    setLogin();
+    document.getElementById("loginVannish").style.display = "flex";
+  };
+  function setLogin() {
+    document.getElementById("Logout").style.display = "none";
+  }
 
-})
-
-
-  //Login Statement
-  
   useEffect(() => {
-    const logeOut = () => {
-      signOut(auth);
-      document.getElementById("Get").Style.Display = "flex";
-      setLogin()
-      document.getElementById("loginVannish").Style.Display='flex'
-    }
-    function setLogin(){
-      document.getElementById('Logout').Style.Display='none'
-    }
+    
     try {
       onAuthStateChanged(auth, (currentUser) => {
         if (currentUser) {
-          setUser(<NavBar logeOut={logeOut} HomeName='Dashboard' />)
-          setData1(currentUser)
-          function Display(){
-          document.getElementById("Get").style.display = "none";
-          document.getElementById("Logout").style.display = "flex";
-          document.getElementById("loginVannish").style.display = "none";
-          document.getElementById('imageIcon').style.display='flex'
-          document.getElementById('imgiconLogo').style.display='flex'
-        } Display()
-
-       ;
+          setUser(<NavBar logeOut={logeOut} HomeName="Dashboard" LinkHomeorDashboard={'/User'} />);
+          setData1(currentUser);
+          function Display() {
+            document.getElementById("Get").style.display = "none";
+            document.getElementById("Logout").style.display = "flex";
+            document.getElementById("loginVannish").style.display = "none";
+            document.getElementById("imageIcon").style.display = "flex";
+            document.getElementById("imgiconLogo").style.display = "flex";
+          }
+          Display();
         } else {
-          console.log(currentUser)
-          setUser(<NavBar HomeName='Home' />)
-          logeOut()
-        
-         function Display(){ 
-          document.getElementById("Get").style.display = "flex";
-          document.getElementById("Logout").style.display = "none";
-          document.getElementById("loginVannish").style.display = "flex"
-          document.getElementById('imageIcon').style.display='none'
-        
-        }; Display()
-      
-         
+          setUser(<NavBar LinkHomeorDashboard={''} HomeName="Home" />);
+          logeOut();
+
+          function Display() {
+            document.getElementById("Get").style.display = "flex";
+            document.getElementById("Logout").style.display = "none";
+            document.getElementById("loginVannish").style.display = "flex";
+            document.getElementById("imageIcon").style.display = "none";
+          }
+          Display();
         }
       });
     } catch (err) {
-      alert('check Your Internet')
+      alert("check Your Internet");
       console.log(err.code);
     }
 
- 
- 
-  List.map(
-    (e)=>{
-      oneData.push(e.FullNames,e.Reason)
-    }
+    List.map((e) => {
+      oneData.push(e.FullNames, e.Reason);
+    });
+    console.log(oneData.FullNames);
+  }, []);
 
-  )
-  console.log(oneData.FullNames)
-
-  },[])
-
-  
   return (
     <BrowserRouter>
-     {user}
-    <div className="UseName" id='imageIcon'>
-
-      <div className="imageUser">
-        <img type='icon' id="imgiconLogo"
-          src={data1?.photoURL}
-          alt="noImage"
-        />
+      {user}
+      <div className="UseName" id="imageIcon">
+        <div className="imageUser">
+          <img
+            type="icon"
+            id="imgiconLogo"
+            src={data1?.photoURL}
+            alt="noImage"
+          />
+        </div>
+        <h2>
+          {data1?.displayName}
+          
+        </h2>
       </div>
-      <h2>{data1?.displayName}{data1?.email}</h2></div>
-   
-   
+
       <Routes>
         <Route
           path="*"
@@ -242,9 +234,9 @@ const oneData=[]
         <Route path="/ListOfCourses" element={<ListOfCourses />} />
         <Route path="/Practice" element={<Practice />} />
         <Route path="/Grade1" element={<Grade1 />} />
-        <Route path="/Grade2" element={<Grade2/>}/>
-        <Route path="/Grade3" element={<Grade3/>}/>
-        <Route path="/Grade4" element={<Grade4/>}/>
+        <Route path="/Grade2" element={<Grade2 />} />
+        <Route path="/Grade3" element={<Grade3 />} />
+        <Route path="/Grade4" element={<Grade4 />} />
         <Route
           path="/ThemeCourses"
           element={
@@ -258,53 +250,122 @@ const oneData=[]
 
         <Route
           path="/Link1"
-          element={<Link1 APIBlockly='https://blockly.games/puzzle?lang=en' Blockly1='Puzzle' youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Puzzle"  />}
+          element={
+            <Link1
+              APIBlockly="https://blockly.games/puzzle?lang=en"
+              Blockly1="Puzzle"
+              youtubelink="https://www.youtube.com/embed/3rkkbltOaXA"
+              header="Puzzle"
+            />
+          }
         />
         <Route
           path="/Link2"
-          element={<Link1 APIBlockly='https://blockly.games/maze?lang=en' Blockly1='Maze' youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Maze" />}
+          element={
+            <Link1
+              APIBlockly="https://blockly.games/maze?lang=en"
+              Blockly1="Maze"
+              youtubelink="https://www.youtube.com/embed/3rkkbltOaXA"
+              header="Maze"
+            />
+          }
         />
-   
-      <Route
+
+        <Route
           path="/Link3"
-          element={<Link1 APIBlockly='https://blockly.games/bird?lang=en' Blockly1='Bird' youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Bird" />}
+          element={
+            <Link1
+              APIBlockly="https://blockly.games/bird?lang=en"
+              Blockly1="Bird"
+              youtubelink="https://www.youtube.com/embed/3rkkbltOaXA"
+              header="Bird"
+            />
+          }
         />
-      <Route
+        <Route
           path="/Link4"
-          element={<Link1 youtubelink="https://blockly.games/turtle?lang=en" header="Turtle" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Turtle" />}
+          element={
+            <Link1
+              youtubelink="https://blockly.games/turtle?lang=en"
+              header="Turtle"
+              youtubelink="https://www.youtube.com/embed/3rkkbltOaXA"
+              header="Turtle"
+            />
+          }
         />
         <Route
           path="/Link5"
-          element={<Link1 youtubelink="https://blockly.games/movie?lang=en" header="Movie" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Movie" />}
+          element={
+            <Link1
+              youtubelink="https://blockly.games/movie?lang=en"
+              header="Movie"
+              youtubelink="https://www.youtube.com/embed/3rkkbltOaXA"
+              header="Movie"
+            />
+          }
         />
         <Route
           path="/Link6"
-          element={<Link1 youtubelink="https://blockly.games/music?lang=en" header="Music" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Music" />}
+          element={
+            <Link1
+              youtubelink="https://blockly.games/music?lang=en"
+              header="Music"
+              youtubelink="https://www.youtube.com/embed/3rkkbltOaXA"
+              header="Music"
+            />
+          }
         />
         <Route
           path="/Link7"
-          element={<Link1 youtubelink="https://blockly.games/pond-tutor?lang=en" header="Pond Tuto" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Pond Tuto" />}
+          element={
+            <Link1
+              youtubelink="https://blockly.games/pond-tutor?lang=en"
+              header="Pond Tuto"
+              youtubelink="https://www.youtube.com/embed/3rkkbltOaXA"
+              header="Pond Tuto"
+            />
+          }
         />
         <Route
           path="/Link8"
-          element={<Link1 youtubelink="https://blockly.games/pond-duck?lang=en" header="Pond" youtubelink="https://www.youtube.com/embed/3rkkbltOaXA" header="Pond" />}
+          element={
+            <Link1
+              youtubelink="https://blockly.games/pond-duck?lang=en"
+              header="Pond"
+              youtubelink="https://www.youtube.com/embed/3rkkbltOaXA"
+              header="Pond"
+            />
+          }
         />
-        <Route path="/Payment-via-Mpesa"  element={<Mpesa TillNumber='5562149'/>}/>
-        <Route path="/Payment-via-PayPal" element={<PayPal GmailPaypal='somapamojacompany@gmail.com'/>}/>
-        <Route path="/Waiting-List" element={<WaitingList/>}/>
-        <Route path="/Form-For-Waiting-List" element={<FormForWaitingList/>}/>
-        <Route path="/Welcome-To-Sponsor-Platform" element={<WelcomeToSponsorPlatform/>}/>
-        <Route path="/Sponsored-Students" element={<SponsoredStudents/>}/>
-        <Route path="/List-Of-Sponsored-Students" element={< ListOfSponsoredStudents/>}/>
-     
-        
-       
-       
-           </Routes>
+        <Route
+          path="/Payment-via-Mpesa"
+          element={<Mpesa TillNumber="5562149" />}
+        />
+        <Route
+          path="/Payment-via-PayPal"
+          element={<PayPal GmailPaypal="somapamojacompany@gmail.com" />}
+        />
+        <Route path="/Waiting-List" element={<WaitingList />} />
+        <Route path="/Form-For-Waiting-List" element={<FormForWaitingList />} />
+        <Route
+          path="/Welcome-To-Sponsor-Platform"
+          element={<WelcomeToSponsorPlatform />}
+        />
+        <Route path="/Sponsored-Students" element={<SponsoredStudents />} />
+        <Route
+          path="/List-Of-Sponsored-Students"
+          element={<ListOfSponsoredStudents />}
+        />
+        <Route path="/Donor-Pages-Question" element={<DonorPagesQ />} />
+        <Route path="/Under-Development" element={<More ExpoPage="Use the App, even under development"/>}/>
+        <Route path="/Under-Development2" element={<More/>}/>
+        <Route path="/Expo" element={<Expo/>}/>
+        <Route path="/Volunteer-Teachers" element={<VolunteerTeachers/>}/>
+        <Route path="/Meeting-schedule" element={<PagePastingMeeting/>}/>
+        <Route path='/Gaming-Space' element={<CrossTheRoad/>}/>
+      </Routes>
 
-      
-
-      <FooterContainer />
+      <FooterContainer emailName={data1?.email} logeOut={logeOut} />
     </BrowserRouter>
   );
 }

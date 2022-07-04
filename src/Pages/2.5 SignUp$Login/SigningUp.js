@@ -16,7 +16,7 @@ import SignUp from "../../Images/SignUp.png";
 import { useState } from "react";
 
 
-export default function SigningUp() {
+export default React.memo( function SigningUp() {
   const [userDetails, setuserDetails] = useState({});
   const navigation = useNavigate();
   async function Submit() {
@@ -99,4 +99,4 @@ export default function SigningUp() {
       <Link to='/SigningIn'className="btn btn-primary" id="createA"> Already have an Account</Link>
     </div>
   );
-}
+})

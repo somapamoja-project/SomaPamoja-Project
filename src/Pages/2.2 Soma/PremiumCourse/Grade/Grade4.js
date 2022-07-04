@@ -1,12 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import class1 from "../../../../Images/class4.png";
 import "./Style.css";
 import Loting from "../../../../Images/Loting.png";
 import { Link } from "react-router-dom";
-import {ThemeCourses} from "../ThemeOfCourses/ThemeCourse";
+import { ThemeCourses } from "../ThemeOfCourses/ThemeCourse";
 export default function Grade4() {
+  const [WeekTopic, SetWeekTopic] = useState({
+    WeekNumber: "Week 1",
+    Topic: "Introdution to Blockly",
+    course1: "Puzzle",
+    course2: "Maze",
+  });
+
+  function TopicTwoProgramme() {
+    SetWeekTopic({
+      WeekNumber: "Week 2",
+      Topic: "Define coding",
+      course1: "Introduction",
+      course2: "Tools for Coding ",
+    });
+  }
+  function TopicThreeProgramme() {
+    SetWeekTopic({
+      WeekNumber: "Week 3",
+      Topic: "Talk about coding language",
+      course1: "Python",
+      course2: "Ruby",
+    });
+  }
+  function TopicFourProgramme() {
+    SetWeekTopic({
+      WeekNumber: "Week 4",
+      Topic: "Interest kids to code",
+      course1: "Why Coding is important",
+      course2: "Coders are in high demand",
+    });
+  }
+  function TopicFiveProgramme() {
+    SetWeekTopic({
+      WeekNumber: "Week 5",
+      Topic: "Ease kids into coding",
+      course1: "How to have fun in coding",
+      course2: "Simple way to code",
+    });
+  }
+
   return (
-    <div className="container">
+    <div className="container" id="Gradeprogram">
       <h1 className="HeaderGrade">
         {""}
         <img src={class1} alt="loading..." />
@@ -20,7 +60,7 @@ export default function Grade4() {
               <span>Loting Nythio Lokiru</span>
             </h1>
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
-            lotylobalu12@gmail.com
+              lotylobalu12@gmail.com
             </a>
             <span>
               <numero>,+254746165494</numero>
@@ -46,11 +86,48 @@ export default function Grade4() {
             header="Master in  Blockly"
             course1="Pond Tutor"
             course2="Pond"
-            link1='/Link7'
-            link2='/Link8'
-            link3=''
+            link1="/Link7"
+            link2="/Link8"
+            link3=""
           />
         </div>
+      </div>
+      <div className="TopicGrade1">
+        <h1>Topics to be covered in Grade 5</h1>
+        <p>Grade 5 is 5 Weeks of Coding , One topic per Week</p>
+        <ol>
+          <button
+            onClick={() => {
+              return SetWeekTopic({
+                WeekNumber: "Week 1",
+                Topic: "Introdution to Blockly",
+                course1: "Puzzle",
+                course2: "Maze",
+              });
+            }}
+            id="weekButton"
+          >
+            <li>Week 1.Introdution to Blockly</li>
+          </button>
+          <br />
+          <button onClick={TopicTwoProgramme} id="weekButton">
+            <li> Week 2.Define coding</li>
+          </button>
+          <br />
+          <button onClick={TopicThreeProgramme} id="weekButton">
+            <li>Week 3.Talk about coding languages</li>
+          </button>{" "}
+          <br />
+          <button onClick={TopicFourProgramme} id="weekButton">
+            <li>Week 4.Interest kids in learning coding</li>
+          </button>
+          <br />
+          <button onClick={TopicFiveProgramme} id="weekButton">
+            {" "}
+            <li>Week 5.Ease kids into coding</li>
+          </button>
+          <br />
+        </ol>
       </div>
     </div>
   );

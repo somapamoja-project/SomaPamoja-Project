@@ -19,10 +19,10 @@ export default function WelcomePage() {
             </div>
             <div className='container2'>
         <li>
-        <Link to='/request' className='image1'> <img src={photo1} alt='loading...'/><p className='options'>Student</p> </Link>
+        <Link to='/request' className='image1'> <img src={photo1} alt='loading...'/><p className='options'>Student, who has less than 15 Years old</p> </Link>
         </li>
         <li>
-        <Link to='/SigningUp' className='image2'><img src={photo2} alt='loading...'/> <p className='options'>Teacher or Guardian</p></Link>
+        <Link to='/SigningUp' className='image2'><img src={photo2} alt='loading...'/> <p className='options'>Teacher, Guardian or more<br/> then 15 Years old</p></Link>
 
         </li>
         </div>

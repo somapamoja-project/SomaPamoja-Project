@@ -27,3 +27,26 @@
     margin-left: 30%;
    
 }
+.TopicGrade1{
+    position:fixed;
+    right: 20px;
+    top: 30%;
+    
+}
+#Gradeprogram{
+    margin-right: 20%;
+}
+#weekButton{
+    border: none;
+    background-color: transparent;
+    color: rgb(2, 172, 239);
+
+}
+#weekButton:hover{
+    text-decoration: underline;
+    color: rgb(57, 110, 131);
+    
+}
+#weekButton:active{
+    color: skyblue;
+}
