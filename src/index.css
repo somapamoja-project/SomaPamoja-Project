@@ -5,4 +5,102 @@ body {
     
   }
   
-  
+  @media only screen and (max-width: 800px) and (min-width:10px){
+    *{
+        max-width: 100%;
+    }
+     
+      .Navbar{
+        
+        width: 20%;
+        margin-right: 0%;
+        
+        
+    }
+    .listNav{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(240, 240, 240);
+      
+    }
+    .listNav1>a>img{
+        
+        bottom: 0%;
+        left: 0%;
+    
+    
+    }
+    .listNav>li,.listNav2>li{
+        list-style: none;
+        
+    }
+    .listNav2{
+       
+        right: 0%;
+        display: flex;
+        flex-direction: row;
+    }
+    .listNav2>li{
+        margin-right: 0%;
+        font-size: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    }
+    .listNav2{
+       
+        top: 0%;
+        margin-right: 0%;
+    }
+    
+    .listNav{
+        height: 80px;
+    }
+    .listNav3>#navName1,#navName2,#navName3,#navName4{
+        color: black;
+    }
+    #navName1:hover,#navName2:hover,#navName3:hover,#navName4:hover{
+        color: rgb(134, 74, 0);
+    }
+    .listNav1>a{
+        position: relative;
+        
+    }
+    .Navbar{
+        position: relative;
+        left: 0%;
+    }
+    .listNav1>.listNav11>img{
+        position: relative;
+        top: 10%;
+        width: 0%;
+    }
+    
+    .listNav1>.listNav12>img{
+        display:flex;
+        position: relative;
+        top: -9%;
+        right: 200px;
+        width: 300%;
+    }
+.Navbar>.listNav>.listNav1{
+    width: 200%;
+    padding-right: 20%;
+}
+.container>.logo4{
+    position: relative;
+    margin-left: 18%;
+}
+
+.container>.officialLogo{
+    position: absolute;
+    margin-left: 18%;
+}
+
+.container1{
+    position: relative;
+    margin-top:49%;
+}
+
+
+}
+
