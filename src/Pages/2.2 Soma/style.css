@@ -128,8 +128,90 @@ border-radius: 25px;
     font-size: 70px;
 }
 
+.QCF1{
+    position: relative;
+    left: 5%;
+    bottom: 200px;
+    
+}
+.QCF1>iframe{
+    border-radius: 25px; 
+    
+}
+#btnPractice{
+    position: relative;
+    top: 70px;
+    right: 300px;
+    border-radius: 25px;
+}
+.QCF2{
+    position: relative;
+    left: 5%;
+    bottom: 200px;
+    
+}
+.QCF2>iframe{
+    border-radius: 25px;
+}
+.QCF2>#btnEmail{
+    position: relative;
+    top: 70px;
+    right: 20%;
+    border-radius: 25px;
+}
+#btnGotoFree{
+    background-color: #683200;
+    border: none;
+    margin: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+#btnGotoFree1{
+    background-color: #683200;
+    border: none;
+    margin: 2%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    width: 10%;
+}
+#btnEmail>a{
+    color: white;
+}
+.ListCourses>iframe{
+    width:80%;
+    border-radius: 30px;
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+.containerR>h2{
+    position: relative;
+    right: 35%;
+}
+.containerR{
+    padding-bottom: 10%;
+}
+.imgList{
+    position: relative;
+    right: 30%;
+    margin: 2%;
+
+}
+.imgList>img{
+    width:50%;
+    border-radius: 25px;
+
+}
+.imgList>img:hover{
+    box-shadow: 6px 3px 6px 2px#683200;
+}
+
+
 
 @media only screen and (max-width: 800px) and (min-width:10px){
+
     li{
         list-style: none;
     }
@@ -168,7 +250,7 @@ border-radius: 25px;
     .image1>p ,.image2>p{
         color: black;
         
-       
+    
     
     }
     .container2>li{
@@ -190,8 +272,8 @@ border-radius: 25px;
     }
     
     .options{
-      font-size: 30px;
-      font-family:New Century Schoolbook
+    font-size: 30px;
+    font-family:New Century Schoolbook
     }
     
     .btn-primary{
@@ -203,13 +285,13 @@ border-radius: 25px;
         border-radius: 10px;
     }
     .ListCourses{
-     color: black;
-     display: flex;
-     flex-direction: column;
-     margin-right:-30%;
-     margin-top: 120px;
-     text-decoration: none;
-     
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-right:-30%;
+    margin-top: 120px;
+    text-decoration: none;
+    
     }
     .ListCourses:hover{
         color: black;
@@ -225,38 +307,36 @@ border-radius: 25px;
         position: relative;
         top: 10px;
         right: 0%;
-        width: 40%;
+        width: 60%;
     }
     .containerC{
         box-shadow: 5px 10px 8px 10px #888888;
-        margin: 5%;
+
         text-align: center;
         
-        padding-left:5%;
+        padding:5%;
     }
     .allCourses{
         position: relative;
-        padding: 40%;
-        margin: -20%;
-        top: -150px;
+        padding: 10%;
+        margin: -30%;
+        top: -100px;
     }
     .containerC>h1{
         position: relative;
         font-size: 30px;
     }
-}
 
-
-.QCF1{
-  position: relative;
-  left: 5%;
-  bottom: 200px;
-  
-}
-.QCF1>iframe{
+    .QCF1{
+        position: relative;
+        left: 5%;
+        bottom: 200px;
+        
+    }
+    .QCF1>iframe{
     border-radius: 25px; 
- 
-}
+    
+    }
 #btnPractice{
     position: relative;
     top: 70px;
@@ -265,9 +345,9 @@ border-radius: 25px;
 }
 .QCF2{
     position: relative;
-  left: 5%;
-  bottom: 200px;
- 
+    left: 5%;
+    bottom: 200px;
+
 }
 .QCF2>iframe{
     border-radius: 25px;
@@ -285,7 +365,7 @@ border-radius: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 20px;
-   
+
 }
 #btnGotoFree1{
     background-color: #683200;
@@ -294,13 +374,13 @@ border-radius: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 20px;
-    width: 10%;
+    width: 30%;
 }
 #btnEmail>a{
     color: white;
 }
 .ListCourses>iframe{
-    width:80%;
+    width: 80%;
     border-radius: 30px;
     margin-top:10%;
     margin-bottom: 10%;
@@ -314,15 +394,33 @@ border-radius: 25px;
 }
 .imgList{
     position: relative;
-    right: 30%;
-    margin: 2%;
-     
+    right: 25%;
+    margin: 15%;
+    width: 100%;    
 }
 .imgList>img{
-    width:50%;
+    width: 150%;
     border-radius: 25px;
 
 }
 .imgList>img:hover{
     box-shadow: 6px 3px 6px 2px#683200;
+}
+.OfferPrograms{
+    position: relative;
+    right: 80px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+.OfferPrograms>div>.img>img{
+    width: 350px;
+    height: 160px;
+    
+}
+    .OfferPrograms>div{
+    margin-right: -1%;
+    padding: 2%;       
+}
 }
