@@ -15,9 +15,9 @@ export default function Home() {
       <Application/>
       </div>
      
-      <div className="Ourprogram">
+      <div className="Ourprogram" id="OurProgram1">
       
-      <OfferPrograms linkto1='/request' linkto2='/Welcome-To-Sponsor-Platform'  />
+      <OfferPrograms linkto1='/request' linkto2='/request'  />
       
       </div>
       <div className="CourseExplanaition">

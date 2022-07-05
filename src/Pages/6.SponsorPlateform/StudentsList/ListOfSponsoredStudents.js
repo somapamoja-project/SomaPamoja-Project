@@ -9,8 +9,10 @@ import './Style.css'
     export default React.memo( function SponsoredStudents() {
       const oneData=[]
       const [List,setList]=useState([]) 
+      
        
        async function FetchDoc(){
+        
        
       try{  await getDocs(colRef).then((allDocs) => {
         var studentsList = []
@@ -45,7 +47,7 @@ import './Style.css'
      
     
       List.map((e)=>{return oneData.push( e.FullNames,oneData.Gender)})
-      console.log(oneData)
+      
     
      
     

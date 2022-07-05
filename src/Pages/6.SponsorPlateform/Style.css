@@ -122,3 +122,15 @@ border-right: solid black 2px ;
     width: 30%;
 
 }
+#form01>input{
+    margin: 2%;
+    border: solid rgb(136, 70, 22);
+}
+#form01>button{
+    background-color:rgb(136, 70, 22) ;
+}
+#table>h5{
+    text-align: center;
+    font-size: 40px;
+    color: gray;
+}

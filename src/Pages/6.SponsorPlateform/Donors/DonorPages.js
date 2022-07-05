@@ -21,7 +21,7 @@ export default function DonorPagesQ() {
         <Link to='/Volunteer-Teachers' className='imageTeacherVolunteer'> <img src={onlineClass} alt='loading...'/><p className='options'> I am Volunteer Teacher </p> </Link>
         </li>
         <li>
-        <Link to='/Donor-Pages-Question' className='imageSponsorVolunteer'><img src={sponsor25} alt='loading...'/> <p className='options'> I am a sponsor</p></Link>
+        <Link to='/Sponsor-platform' className='imageSponsorVolunteer'><img src={sponsor25} alt='loading...'/> <p className='options'> I am a sponsor</p></Link>
 
         </li>
         </div>

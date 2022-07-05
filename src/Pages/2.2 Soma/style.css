@@ -326,3 +326,7 @@ border-radius: 25px;
 .imgList>img:hover{
     box-shadow: 6px 3px 6px 2px#683200;
 }
+.containerC{
+    background-color: #FEFBDB;
+    border-radius: 50px;
+}

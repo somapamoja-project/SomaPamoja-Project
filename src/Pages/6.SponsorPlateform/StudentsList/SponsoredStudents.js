@@ -44,7 +44,7 @@ console.log(err.message)
 
   
  
-
+  console.log(List)
   List.map((e)=>{return oneData.push( e.FullNames,oneData.Gender)})
   console.log(oneData)
 

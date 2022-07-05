@@ -474,3 +474,7 @@ border-radius: 25px;
 .GamingSpace>div>p{
     font-family: Comic Sans MS;
 }
+#OurProgram1{
+    position: relative;
+    top: 100px;
+}

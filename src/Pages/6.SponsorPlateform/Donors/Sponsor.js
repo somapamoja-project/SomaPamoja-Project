@@ -3,8 +3,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { colRef } from "../../../firebase/Firebase-config";
 import'../Style.css'
+import { useNavigate } from "react-router-dom";
+
 
 export default React.memo(function Sponsor() {
+  const navigate002=useNavigate()
   const oneData = [];
   const [List, setList] = useState([]);
 
@@ -35,16 +38,22 @@ export default React.memo(function Sponsor() {
   useEffect(() => {
     FetchDoc();
   }, []);
-
+console.log(List)
   return (
-    <div className="container">
+    <div className="container" id="table">
       <h1>Welcome to sponsor Platform</h1><br/>
+      <h5>Profiles of students who need to be sponsored</h5>
       <table className="table">
-        <h5>List of students who need to be sponsored</h5>
+        
         <tr>
           <th>Full Names </th>
           <th>Age</th>
           <th>Gender</th>
+          <th>Interest</th>
+          <th>Nationality</th>
+          <th>Status</th>
+          <th>Reason</th>
+          
         </tr>
 
         {List.map((e) => {
@@ -52,7 +61,12 @@ export default React.memo(function Sponsor() {
             <tr>
               <td>{e.FullNames}</td>
               <td>{e.Age}</td>
-              <td>{e.Gender}</td>{" "}
+              <td>{e.Gender}</td>
+              <td>{e.Interest}</td>
+              <td>{e.Nationality}</td>
+               <td>{e.Status}</td>
+              <td>{e.Reason}<button onClick={()=>{return navigate002('/Payment')}} className="btn btn-dark" >Pay to sponsor </button></td>
+             
             </tr>
           );
         })}

@@ -30,7 +30,7 @@ import CreateEmail from "../2.2 Soma/Courses/Create your ancount/CreateEmail";
 import GoingOnlineSafely from "../2.2 Soma/Courses/GoingOnlineSafely";
 import SigningUp from "../2.5 SignUp$Login/SigningUp.js";
 import FormPage from "../2.5 SignUp$Login/FormPage";
-import { User } from "../5.Dashbord/User";
+import  User  from "../5.Dashbord/User";
 import SigningIn from "../2.5 SignUp$Login/LogIn";
 import Payment from "../5.Dashbord/Payment";
 import ListOfCourses from "../2.2 Soma/PremiumCourse/ListOfGrades";
@@ -61,6 +61,7 @@ import { Expo, More } from "../2.1HomePage/HomeComponents";
 import VolunteerTeachers from "../6.SponsorPlateform/Donors/VolunteerTeachers";
 import PagePastingMeeting from "../6.SponsorPlateform/Donors/PagePastingMeeting";
 import CrossTheRoad from "../Gaming/CrossTheRoad";
+import Sponsor from '../6.SponsorPlateform/Donors/Sponsor'
 export default function RouterAllPages() {
   const [user, setUser] = useState();
   const [data1, setData1] = useState({});
@@ -363,6 +364,7 @@ export default function RouterAllPages() {
         <Route path="/Volunteer-Teachers" element={<VolunteerTeachers/>}/>
         <Route path="/Meeting-schedule" element={<PagePastingMeeting/>}/>
         <Route path='/Gaming-Space' element={<CrossTheRoad/>}/>
+        <Route path="/Sponsor-platform" element={<Sponsor/>}/>
       </Routes>
 
       <FooterContainer emailName={data1?.email} logeOut={logeOut} />
